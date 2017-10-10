@@ -4,7 +4,7 @@ LODEL
 1. 	Pages d'entrée :
 ------------------------
 
-- Présentation sommaire : qu'est ce que Lodel ? (c.f <hhttps://github.com/PatGendre/testreadthedocs/wiki>)
+- Présentation sommaire : qu'est ce que Lodel ? (c.f <https://github.com/PatGendre/testreadthedocs/wiki>)
 - Téléchargement / Installation (c.f <http://lodel.org/downloads/vms/>)
 - Prise en main (Getting Started)
 _
