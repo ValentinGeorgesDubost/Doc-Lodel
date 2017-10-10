@@ -1,8 +1,12 @@
 1.  Faire une demande ou signaler un bug
 ----------------------------------------
 
+<https://github.com/OpenEdition/lodel/issues>
+
 2.  Mailing List
 ----------------
+
+<https://groupes.renater.fr/%E2%80%8Bsympa/%E2%80%8Binfo/%E2%80%8Blodel-users>
 
 3. Contribuer
 -------------
@@ -18,4 +22,4 @@ Dans d'autres configurations, il est possible que des adaptations soient nécess
 La base de Lodel date de la première moitié des années 2000. Il a évolué sur cette base.
 Il est daté, en particulier dans sa conception et dans certaines librairies utilisées (pear par exemple).
 Donc pour résumer, la prise en main n'est pas simple et il faut disposer de compétences informatiques et de persévérance pour l'utiliser...
-Pour ces raisons, votre contribution est la bienvenue !
+Pour ces raisons, votre contribution est la bienvenue ! <https://github.com/OpenEdition/lodel>
