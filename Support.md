@@ -1,14 +1,14 @@
-1.  Faire une demande ou signaler un bug
+Faire une demande ou signaler un bug
 ----------------------------------------
 
 <https://github.com/OpenEdition/lodel/issues>
 
-2.  Mailing List
+Mailing List
 ----------------
 
 <https://groupes.renater.fr/%E2%80%8Bsympa/%E2%80%8Binfo/%E2%80%8Blodel-users>
 
-3. Contribuer
+Contribuer
 -------------
 
 Le code est partagé sous licence GPLv2 sur GitHub mais notre équipe est réduite et a beaucoup évolué ces dernières années.
