@@ -7,7 +7,7 @@ LODEL
 - Présentation sommaire : qu'est ce que Lodel ? (c.f <https://github.com/PatGendre/testreadthedocs/wiki>)
 - Téléchargement / Installation (c.f <http://lodel.org/downloads/vms/>)
 - Prise en main (Getting Started)
-_
+
 
 2.	Doc Technique (coté dev, c.f tout ce qui est sur <https://github.com/OpenEdition/lodel>) :
 --------------------------------------------------------------------------------------------------
