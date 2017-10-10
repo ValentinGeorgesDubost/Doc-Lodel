@@ -141,29 +141,29 @@ Copyright 2001-2015 CLEO
 Centre pour L'Édition Électronique Ouverte - Marseille
 
 Authors and contributors :
-  - Ghislain Picard
-  - Marin Dacos
-  - Jean Lamy
-  - Luc Santeramo
-  - Nicolas Nutten
-  - Anne Gentil-Beccot
-  - Bruno Cénou
-  - Gautier Poupeau
-  - Mikaël Cixous
-  - Sophie Malafosse
-  - Pierre-Alain Mignot
-  - Inès Secondat de Montesquieu
-  - Jean-François Rivière
-  - Nahuel Angelinetti
-  - Anne Durand
-  - Jean-André Santoni
-  - Pierre André
-  - Bastien Miraucourt
-  - Céline Barthonnat
-  - Sandra Guigonis
-  - François Grosdemouge
-  - Jean-Baptiste Bertrand
-  - Élodie Picard
-  - Romain Boistel
-  - Arnaud Cordier
-  - Cédric Chatelain
+- Ghislain Picard
+- Marin Dacos
+- Jean Lamy
+- Luc Santeramo
+- Nicolas Nutten
+- Anne Gentil-Beccot
+- Bruno Cénou
+- Gautier Poupeau
+- Mikaël Cixous
+- Sophie Malafosse
+- Pierre-Alain Mignot
+- Inès Secondat de Montesquieu
+- Jean-François Rivière
+- Nahuel Angelinetti
+- Anne Durand
+- Jean-André Santoni
+- Pierre André
+- Bastien Miraucourt
+- Céline Barthonnat
+- Sandra Guigonis
+- François Grosdemouge
+- Jean-Baptiste Bertrand
+- Élodie Picard
+- Romain Boistel
+- Arnaud Cordier
+- Cédric Chatelain
