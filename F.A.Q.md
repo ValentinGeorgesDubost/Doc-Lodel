@@ -65,3 +65,8 @@ Est-ce que Lodel s’installe partout ?
 
 Les hébergeurs gratuits (comme Free) imposent des restrictions d’hébergement qui empêchent l’installation de logiciels aussi puissants que Lodel. En revanche, Lodel peut être facilement installé chez de nombreux installeurs professionnels.
 Pour en savoir plus sur l’installation de Lodel, nous vous renvoyons au [Manuel d’installation de Lodel]
+
+Est-ce qu'Openedition propose des formations utilisateurs pour Lodel ?
+----------------------------------------------------------------------
+
+Oui ! Référez-vous à cette page pour de plus amples informations <https://www.openedition.org/10837/>
