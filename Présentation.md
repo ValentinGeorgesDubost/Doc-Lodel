@@ -33,8 +33,8 @@ Le Cléo ne propose pas de service de conversion ouvert comme c'était le cas av
 Comme pour Lodel, nous utilisons OTX dans un environnement Debian 7/8. Nous ne l'avons pas testé dans d'autres environnements.
 En particulier, nous ne savons pas s'il est utilisable dans un environnement Windows.
 
-3.  Lodel pour OpenEdition: Maison des revues
----------------------------------------------
+3.  Lodel pour OpenEdition : Maison des revues
+----------------------------------------------
 
 La maison des revues http://maisondesrevues.org/ est le site d'accompagnement éditorial des revues de Revues.org qui publient sur la plateforme avec Lodel mais bénéficient également des autres services cités plus haut (pdf, epub, oai, maquette...).
 Donc cette documentation contient des informations relatives à Lodel mais aussi des informations relatives à d'autres services de la plateforme.
