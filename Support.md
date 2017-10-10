@@ -1,13 +1,10 @@
-1.  F.A.Q
----------
-
-2.  Faire une demande ou signaler un bug
+1.  Faire une demande ou signaler un bug
 ----------------------------------------
 
-3.  Mailing List
+2.  Mailing List
 ----------------
 
-4. Contribuer
+3. Contribuer
 -------------
 
 Le code est partagé sous licence GPLv2 sur GitHub mais notre équipe est réduite et a beaucoup évolué ces dernières années.
