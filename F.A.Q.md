@@ -69,4 +69,4 @@ Pour en savoir plus sur l’installation de Lodel, nous vous renvoyons au [Manue
 Est-ce qu'Openedition propose des formations utilisateurs pour Lodel ?
 ----------------------------------------------------------------------
 
-Oui ! Référez-vous à cette page pour de plus amples informations <https://www.openedition.org/10837/>
+Oui ! Référez-vous à cette page pour de plus amples informations <https://www.openedition.org/10837>
