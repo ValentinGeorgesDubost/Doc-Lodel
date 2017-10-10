@@ -49,5 +49,3 @@ LODEL
 - Get support / tickets (bugs and feature requests) (géré par Redmine)
 - Contribuer (renvoyer sur <https://github.com/OpenEdition/lodel/>)
 - License / Copyright (c.f <https://github.com/OpenEdition/lodel/>)
-
-![Alt text](https://github.com/ValentinGeorgesDubost/Doc-Lodel/blob/master/lodel-small432.png)
