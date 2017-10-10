@@ -50,4 +50,4 @@ LODEL
 - Contribuer (renvoyer sur <https://github.com/OpenEdition/lodel/>)
 - License / Copyright (c.f <https://github.com/OpenEdition/lodel/>)
 
-![Alt text](/home/quentin/Téléchargements/lodel-small432.png)
+![Alt text](https://github.com/ValentinGeorgesDubost/Doc-Lodel/blob/master/lodel-small432.png)
