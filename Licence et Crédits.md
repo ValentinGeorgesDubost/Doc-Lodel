@@ -141,6 +141,8 @@ Copyright 2001-2015 CLEO
 Centre pour L'Édition Électronique Ouverte - Marseille
 
 Authors and contributors :
+--------------------------
+
 - Ghislain Picard
 - Marin Dacos
 - Jean Lamy
