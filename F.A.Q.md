@@ -100,8 +100,7 @@ Suis-je obligé de me servir de Lodelscript ?
 
 Non, il est possible d’utiliser directement PHP, mais Lodelscript est plus sûr et facilite la tâche du maquettiste.
 
-
-Ca a l'air siple et puissant, mais long à mettre en place. Dispose t'on de maquettes prédéfinies ?
+Dispose t'on de maquettes prédéfinies ?
 --------------------------------------------------------------------------------------------------
 
 Oui. Vous pouvez démarrer en utilisant une maquette prédéfinie qui est livrée avec Lodel.
