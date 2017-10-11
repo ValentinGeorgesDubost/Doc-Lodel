@@ -7,6 +7,13 @@ Qu’est-ce que Lodel ?
 Lodel est un logiciel d’édition électronique. Il est simple d’utilisation, et facile à adapter à des usages particuliers. 
 C’est un logiciel libre, sous licence GPL développé par l’équipe de Revues.org. Il est librement téléchargeable sur <http://sourceforge.net/projects/lodel/>. C’est un CMS (logiciel de gestion de contenu).
 
+A quoi sert Lodel ?
+-------------------
+Lodel est un logiciel d’édition électronique : il prend en charge le processus de publication des textes, depuis le traitement de texte de l’utilisateur jusqu’à la mise en ligne.
+Lodel a une double utilité :
+- Il convertit des textes d’un format traitement de texte à un format web (XHTML)
+- il génère automatiquement l’ensemble des métadonnées dont les publications ont besoin pour être correctement identifiées, indexées et référencées, notamment par les moteurs de recherche.
+
 Qu’est-ce qu’un CMS ?
 ---------------------
 
@@ -15,13 +22,6 @@ Les systèmes de gestion de contenu ou CMS (de l’anglais Content Management Sy
 - Ils fournissent une chaîne de publication offrant par exemple la possibilité de mettre en ligne des documents
 - Ils permettent de séparer les opérations de gestion de la forme et du contenu pour en savoir plus, voir la partie « survol du fonctionnement de Lodel »)
 - Ils permettent de structurer le contenu
-
-A quoi sert Lodel ?
--------------------
-Lodel est un logiciel d’édition électronique : il prend en charge le processus de publication des textes, depuis le traitement de texte de l’utilisateur jusqu’à la mise en ligne.
-Lodel a une double utilité :
-- Il convertit des textes d’un format traitement de texte à un format web (XHTML)
-- il génère automatiquement l’ensemble des métadonnées dont les publications ont besoin pour être correctement identifiées, indexées et référencées, notamment par les moteurs de recherche.
 
 En quoi Lodel est-il différent d’autres logiciels de CMS ?
 ----------------------------------------------------------
@@ -83,6 +83,11 @@ Est-on obligé de créer son propre modèle éditorial (ME) ?
 
 Il n’est pas recommandé de commencer à utiliser Lodel sans aucun Modèle éditorial prédéfini. L’équipe de Lodel.org met à votre disposition un ME Revues.org dédié à la publication structurée de textes longs. Si vous créez un ME dédié à un usage particulier, merci de le mettre à disposition du reste de la communauté pour permettre à d’autres utilisateurs de l’utiliser.
 
+Dispose t'on de maquettes prédéfinies ?
+--------------------------------------------------------------------------------------------------
+
+Oui. Vous pouvez démarrer en utilisant une maquette prédéfinie qui est livrée avec Lodel.
+
 Est-ce que Lodel est gourmand en ressources ?
 ---------------------------------------------
 
@@ -99,11 +104,6 @@ Suis-je obligé de me servir de Lodelscript ?
 --------------------------------------------
 
 Non, il est possible d’utiliser directement PHP, mais Lodelscript est plus sûr et facilite la tâche du maquettiste.
-
-Dispose t'on de maquettes prédéfinies ?
---------------------------------------------------------------------------------------------------
-
-Oui. Vous pouvez démarrer en utilisant une maquette prédéfinie qui est livrée avec Lodel.
 
 Est-ce qu'Openedition propose des formations utilisateurs pour Lodel ? Où postuler pour publier ma revue / collection Lodel sur Openedition ?
 ----------------------------------------------------------------------
