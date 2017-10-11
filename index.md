@@ -1,37 +1,36 @@
 LODEL
 =====
 
-1. 	Pages d'entrée :
-------------------------
+1. 	Pages d'entrée : FAIT
+-------------------------
 
 - Présentation sommaire : qu'est ce que Lodel ? (c.f <https://github.com/PatGendre/testreadthedocs/wiki>)
 - Téléchargement / Installation (c.f <http://lodel.org/downloads/vms/>)
 - Prise en main (Getting Started)
 
 
-2.	Doc Technique (coté dev, c.f tout ce qui est sur <https://github.com/OpenEdition/lodel>) :
---------------------------------------------------------------------------------------------------
+2.	Doc Technique :
+-------------------
 
-- vue d'ensemble
-- le modèle éditorial
-- Glossaire (Listing termes utilisateur / termes techniques, définition / à quoi ça sert / où les trouver)
-- otx, le schéma TEI et le modèle Word
-- les extensions (plugins)
-- les templates
-
+- Le modèle éditorial
+- Glossaire (Listing termes utilisateur / termes techniques, définition / à quoi ça sert / où les trouver) ???
+- OTX
+- Schéma TEI et modèle Word
+- Les templates
+- Les extensions (plugins)
+- Les hooks ?
 
 3.	Doc utilisateur :
--------------------------
+---------------------
 
-- administration lodel : gestion de plusieurs sites, des utilisateurs, du modèle éditorial, des templates, paramétrage avancé...
-- gestion d'un site lodel
+- administration / gestion de lodel : gestion de plusieurs sites, des utilisateurs, du modèle éditorial, des templates, paramétrage avancé...
 - alimentation d'un site lodel en contenu :
-- site basique sans documents structurés (xml/tei)
-- à partir de documents Word stylés (si Lodel installé avec otx)
+  - site basique sans documents structurés (xml/tei) ???
+  - à partir de documents Word stylés (si Lodel installé avec otx)
 
 
-4.	Lodel pour Openedition :
-----------------------------
+4.	Lodel pour Openedition : ??????
+-----------------------------------
 
 - [lodel.org](<https://www.lodel.org/>) : site de présentation de Lodel
 - [lodel.hypotheses.org](<https://www.lodel.hypotheses.org/>) : Blog Lodel, billets des différentes releases déployées
@@ -41,8 +40,8 @@ LODEL
 - [maisondesrevues.org](<https://www.maisondesrevues.org/>) : doc pour revues.org et books.openedition.org
 
 
-5.	Annexe :
-----------------
+5.	Annexe : FAIT (intégré à la page Wiki de présentation)
+----------------------------------------------------------
 
 - F.A.Q (<http://maisondesrevues.org/66/>)
 - Résumé des releases, dates et contenu (c.f <http://lodel.hypotheses.org/>)
