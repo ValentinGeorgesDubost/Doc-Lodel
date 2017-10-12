@@ -13,14 +13,14 @@ Déclencheurs (triggers)
 -----------------------
 
 Pour le moment, 8 triggers sont disponibles :
-- preauth : déclenché avant l'authentification de l'utilisateur
-- postauth : déclenché après l'authentification de l'utilisateur
-- prelogin : déclenché avant le login de l'utilisateur
-- postlogin : déclenché après le login de l'utilisateur
-- preview : déclenché avant l'affichage d'une page
-- postview : déclenché après l'affichage d'une page
-- preedit : déclenché avant l'exécution d'une action par le controlleur
-- postedit : déclenché après l'exécution d'une action par le controlleur
+-	preauth : déclenché avant l'authentification de l'utilisateur
+-	postauth : déclenché après l'authentification de l'utilisateur
+-	prelogin : déclenché avant le login de l'utilisateur
+-	postlogin : déclenché après le login de l'utilisateur
+-	preview : déclenché avant l'affichage d'une page
+-	postview : déclenché après l'affichage d'une page
+-	preedit : déclenché avant l'exécution d'une action par le controlleur
+-	postedit : déclenché après l'exécution d'une action par le controlleur
 
 
 Démarrage
@@ -29,8 +29,8 @@ Démarrage
 Un plugin est un répertoire contenu dans /share/plugins/custom/.
 Le nom du répertoire correspond au nom du plugin.
 Au minimum, le plugin doit contenir les fichiers suivants :
-- config.xml : fichier XML de configuration.
-- nom_du_plugin.php : une classe ou des fonctions
+-	config.xml : fichier XML de configuration.
+-	nom_du_plugin.php : une classe ou des fonctions
 
 Si vous utilisez une classe, elle doit impérativement étendre la classe abstraite 'Plugin' définie dans lodel/scripts/plugin.php, et définir les 2 méthodes 'enableAction' et 'disableAction', qui seront appellées à l'activation/désactivation du plugin.
 De plus, la classe 'Plugin' va remplir automatiquement la propriété protégée $_config avec la configuration du plugin pour le site, et une méthode protégée '_checkRights' qui prend en argument un niveau d'utilisateur (entier, voir le fichier /lodel/scripts/auth.php pour les valeurs) et retourne un boolean selon si l'utilisatuer a un niveau supérieur ou égale à celui spécifié.
