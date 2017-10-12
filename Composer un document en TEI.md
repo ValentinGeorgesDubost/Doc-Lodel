@@ -6,7 +6,7 @@ La prise en compte d'une structuration des documents conforme aux standards TEI 
 Le schéma XML W3C pour l'encodage TEI Openedition est disponible à l'adresse http://lodel.org/ns/.
 Un document TEI d'exemple est disponible à cette adresse : Lorem-ipsum-Lodel1.0.xml.
 
-Errata
+**Errata**
 
 Révision 27/04/2015 : correction de la documentation pour les épigraphes. Contrairement à ce qui était indiqué jusqu'à cette date les épigraphes doivent figurer dans le <body>, pas dans le <front>.
 
@@ -26,39 +26,42 @@ Révision 11/10/2017 : corrections exemples sur les formules mathématiques
 
 Sommaire
 
-    I. teiHeader
-        Titre, sous-titre, surtitre, titres traduits
-        Auteurs, traducteurs, éditeurs scientifiques et leur description
-        Utilisation de la balise name
-        Utilisation de la balise persName
-        Description des contributeurs
-        Index : Mots-clés, keywords... ; géographie ; chronologie ; thèmes
-        Dates de publication papier et électronique
-        Date de publication électronique et barrière mobile
-        Autres métadonnées
-    II. text
-        II.1. front
-            Résumés
-            Notes de lecture et comptes rendus d’ouvrages
-            Note de l’auteur, note de la rédaction, erratum, remerciements
-        II.2. body
-            Structure du texte et intertitres
-            Notes de bas de page et notes de fin
-            Mises en forme du texte : balises hi, attributs rend et rendition
-            Citations et styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, épigraphe, séparateur)
-            Listes
-            Tableaux
-            Liens hypertextes
-            Illustrations
-            Formule
-            Code
-            Exemples de linguistique
-        II.3. back
-            Bibliographie
-            Annexes
+1. teiHeader
+*	Titre, sous-titre, surtitre, titres traduits
+*        Auteurs, traducteurs, éditeurs scientifiques et leur description
+*        Utilisation de la balise name
+*        Utilisation de la balise persName
+*        Description des contributeurs
+*        Index : Mots-clés, keywords... ; géographie ; chronologie ; thèmes
+*        Dates de publication papier et électronique
+*        Date de publication électronique et barrière mobile
+*        Autres métadonnées
+
+2. text
+        2.1 front
+*             Résumés
+*             Notes de lecture et comptes rendus d’ouvrages
+*             Note de l’auteur, note de la rédaction, erratum, remerciements
+        2.2 body
+*             Structure du texte et intertitres
+*             Notes de bas de page et notes de fin
+*             Mises en forme du texte : balises hi, attributs rend et rendition
+*             Citations et styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, épigraphe, séparateur)
+*             Listes
+*             Tableaux
+*             Liens hypertextes
+*             Illustrations
+*             Formule
+*             Code
+*             Exemples de linguistique
+        2.3 back
+*             Bibliographie
+*             Annexes
 
 teiHeader
+--------------------
 Titre, sous-titre, surtitre, titres traduits
+--------------------
 
 Veiller à ce que chaque titre :
 
@@ -80,16 +83,14 @@ Xpath:
 
 Exemple:
 
-[...]
-<teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="sup">Dolor sit amet</title>
-        <title type="main">Lorem ipsum pour Opentext</title>
-        <title type="sub">Basé sur le modèle éditorial pour Lodel de OpenEdition</title>
-        <title type="alt" xml:lang="en">Other travelling salesmen live a life of luxury</title>
-        <title type="alt" xml:lang="es">Las preocupaciones son mucho mayores</title>
-[...]
+	<teiHeader>
+	  <fileDesc>
+	    <titleStmt>
+		<title type="sup">Dolor sit amet</title>
+		<title type="main">Lorem ipsum pour Opentext</title>
+		<title type="sub">Basé sur le modèle éditorial pour Lodel de OpenEdition</title>
+		<title type="alt" xml:lang="en">Other travelling salesmen live a life of luxury</title>
+		<title type="alt" xml:lang="es">Las preocupaciones son mucho mayores</title>
 
 Auteurs, traducteurs, éditeurs scientifiques, directeurs de fouilles, collaborateurs (pour l'archéologie) et leur description
 
