@@ -43,9 +43,8 @@ Le fichier de configuration doit contenir au moins une information qui correspon
 
 Voici un exemple commenté d'un fichier de configuration :
 
-<pre>
-<?xml version="1.0" encoding="utf-8" ?>
-<LodelPlugin>
+	<?xml version="1.0" encoding="utf-8" ?>
+	<LodelPlugin>
 	<title>nom du plugin</title>
 	<description>description du plugin</description>
 	<sql>0</sql> <!-- mettre à 1 si le plugin ajoute une table dans la base de données. 
@@ -64,8 +63,7 @@ Voici un exemple commenté d'un fichier de configuration :
 		<param name="authorized_tags" title="Balises HTML autorisées" type="text" defaultValue="em,strong,h1,h2,h3,sup,span,a" allowedValues="" required="true"/>
 		<param name="userrights" title="Droits utilisateurs" type="select" allowedValues="20,30,40,128" defaultValue="40" required="true"/>
 	</parameters>
-</LodelPlugin>
-</pre>
+	</LodelPlugin>
 
 
 Vous pouvez utiliser les variables de traductions dans le title du plugin ainsi que le title des paramètres. Pour celà, mettre un underscore '_' en début du title :
@@ -78,49 +76,44 @@ Exemple
 
 Voici un exemple d'un plugin rajoutant le temps de calcul de la page en commentaire HTML, seulement pour les utilisateurs authentifié avec un niveau supérieur à visiteur. Il utilise le trigger 'postview' déclenché après la génération de la page, et la variable statique $microtime contenant l'heure de début de génération de la page.
 
-<pre>
-<?php
-// ma classe doit absolument étendre la classe de base 'Plugins'
-class monPlugin extends Plugins
-{
-    // pas besoin d'initialiser quoique ce soit à l'activation/désactivation du plugin
-    // il faut toutefois les déclarer pour respecter la cohérence avec la classe parente
-    public function enableAction(&$context, &$error) {}
-    public function disableAction(&$context, &$error) {}
+	<?php
+	// ma classe doit absolument étendre la classe de base 'Plugins'
+	class monPlugin extends Plugins
+	{
+    	// pas besoin d'initialiser quoique ce soit à l'activation/désactivation du plugin
+    	// il faut toutefois les déclarer pour respecter la cohérence avec la classe parente
+    	public function enableAction(&$context, &$error) {}
+    	public function disableAction(&$context, &$error) {}
 
-    public function postview(&$context)
-    {
-        if(!parent::_checkRights(LEVEL_REDACTOR)) { return; }
-        // on récupère le contenu de la page
-        $page = View::$page;
-        // on récupère l'heure de début de génération
-        $time = View::$microtime;
-        // on calcule et concatène le temps de génération au contenu de la page
-        $page .= '<!-- Page generated in '.round(microtime(true) - $time, 6).'s -->';
-        // on remplace le contenu de la page dans la vue
-        View::$page = $page;
-    }
-}
-?>
-</pre>
-
+	    public function postview(&$context)
+	    {
+        	if(!parent::_checkRights(LEVEL_REDACTOR)) { return; }
+        	// on récupère le contenu de la page
+        	$page = View::$page;
+        	// on récupère l'heure de début de génération
+        	$time = View::$microtime;
+     		// on calcule et concatène le temps de génération au contenu de la page
+        	$page .= '<!-- Page generated in '.round(microtime(true) - $time, 6).'s -->';
+        	// on remplace le contenu de la page dans la vue
+        	View::$page = $page;
+	    }
+	}
+	?>
 
 Le même plugin n'utilisant pas de classe :
 
-<pre>
-function monPlugin_postview(&$context)
-{
-    if(!C::get('redactor', 'lodeluser')) { return; }
-    // on récupère le contenu de la page
-    $page = View::$page;
-    // on récupère l'heure de début de génération
-    $time = View::$microtime;
-    // on calcule et concatène le temps de génération au contenu de la page
-    $page .= '<!-- Page generated in '.round(microtime(true) - $time, 6).'s -->';
-    // on remplace le contenu de la page dans la vue
-    View::$page = $page;    
-}
-</pre>
+	function monPlugin_postview(&$context)
+	{
+	if(!C::get('redactor', 'lodeluser')) { return; }
+	// on récupère le contenu de la page
+	$page = View::$page;
+	// on récupère l'heure de début de génération
+	$time = View::$microtime;
+	// on calcule et concatène le temps de génération au contenu de la page
+	$page .= '<!-- Page generated in '.round(microtime(true) - $time, 6).'s -->';
+	// on remplace le contenu de la page dans la vue
+	View::$page = $page;    
+	}
 
 Exemple : afficher la météo d'une ville précise dans l'interface lodel
 ----------------------------------------------------------------------
