@@ -21,12 +21,12 @@ Structure du site et champs dans le mdoèle éditorial de revues.org
 
 Les modèles éditoriaux mettent en place de contraintes sur les types de structuration qu’ils autorisent. Ils interdisent ainsi les structurations absurdes (un numéro de revue dans une sous-partie par exemple), ou qui ne sont pas souhaitées. Le modèle éditorial de Revues.org repose sur un nombre limité de règles simples :
 
-Les « collections » sont nécessairement définies à la racine de l’arborescence documentaire du site.
-Les « numéros » et « rubriques » ne peuvent pas être créées à la racine du site.
-Les « sous-parties » se trouvent uniquement dans les numéros et les rubriques
-Les « textes » ne peuvent se trouver à la racine du site
-Les « fichiers » ne peuvent être placés à la racine du site
-Les « personnes » ne peuvent être insérées qu’au sein de publications de type « Equipe »
+- Les « collections » sont nécessairement définies à la racine de l’arborescence documentaire du site.
+- Les « numéros » et « rubriques » ne peuvent pas être créées à la racine du site.
+- Les « sous-parties » se trouvent uniquement dans les numéros et les rubriques
+- Les « textes » ne peuvent se trouver à la racine du site
+- Les « fichiers » ne peuvent être placés à la racine du site
+- Les « personnes » ne peuvent être insérées qu’au sein de publications de type « Equipe »
 C’est l’application des règles du modèle éditorial qui explique que certains types de publications ou de documents ne sont pas disponibles et ne peuvent être créés selon l’endroit où l’on se trouve dans l’arborescence du site.
 
 Dans la page d’édition des publications, le bloc de « Gestion des publications » est propre au modèle éditorial de Revues.org. Il permet de transmettre des informations qui, si elles sont utilisées par la maquette, déclenchent des affichages spécifiques :
@@ -36,6 +36,6 @@ Bloc de gestion des publications
 
 C.F IMAGE <https://lodel.org/docannexe/image/434/img-5-small580.png>
 
-« Cette publication est-elle prioritaire ? » Dans les maquettes conçues par Revues.org, cette option permet de faire remonter la publication à la « Une » de la page d’accueil du site.
-« Cette publication est-elle à paraître ? » Dans les maquettes conçues par Revues.org, cette option permet d’afficher le numéro des revues à paraître dans la barre de navigation, sous l’intitulé adéquat.
-« Cette publication est-elle en texte intégral ? » Dans les maquettes conçues par le Cléo, cette option permet de signaler dans la barre de navigation que ce numéro est en libre accès et n’est pas dans la barrière mobile.
+- « Cette publication est-elle prioritaire ? » Dans les maquettes conçues par Revues.org, cette option permet de faire remonter la publication à la « Une » de la page d’accueil du site.
+- « Cette publication est-elle à paraître ? » Dans les maquettes conçues par Revues.org, cette option permet d’afficher le numéro des revues à paraître dans la barre de navigation, sous l’intitulé adéquat.
+- « Cette publication est-elle en texte intégral ? » Dans les maquettes conçues par le Cléo, cette option permet de signaler dans la barre de navigation que ce numéro est en libre accès et n’est pas dans la barrière mobile.
