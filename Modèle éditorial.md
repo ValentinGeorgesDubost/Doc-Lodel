@@ -16,7 +16,7 @@ Les « sites » : ils alimentent en général des annuaires de sites. On disting
 Ces différentes entités font l’objet d’un chapitre particulier de la documentation.
 
 
-Structure du site et champs dans le mdoèle éditorial de revues.org
+Structure du site et champs dans le modèle éditorial de revues.org
 ==================================================================
 
 Les modèles éditoriaux mettent en place de contraintes sur les types de structuration qu’ils autorisent. Ils interdisent ainsi les structurations absurdes (un numéro de revue dans une sous-partie par exemple), ou qui ne sont pas souhaitées. Le modèle éditorial de Revues.org repose sur un nombre limité de règles simples :
