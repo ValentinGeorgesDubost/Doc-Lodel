@@ -13,6 +13,7 @@ Déclencheurs (triggers)
 -----------------------
 
 Pour le moment, 8 triggers sont disponibles :
+
 -	preauth : déclenché avant l'authentification de l'utilisateur
 -	postauth : déclenché après l'authentification de l'utilisateur
 -	prelogin : déclenché avant le login de l'utilisateur
