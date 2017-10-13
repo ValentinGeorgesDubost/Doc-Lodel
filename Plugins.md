@@ -30,6 +30,7 @@ Démarrage
 Un plugin est un répertoire contenu dans /share/plugins/custom/.
 Le nom du répertoire correspond au nom du plugin.
 Au minimum, le plugin doit contenir les fichiers suivants :
+
 *	config.xml : fichier XML de configuration.
 *	nom_du_plugin.php : une classe ou des fonctions
 
