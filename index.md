@@ -9,8 +9,8 @@ LODEL
 - Prise en main (Getting Started)
 
 
-2.	Doc Technique (Glossaire ):
--------------------------------
+2.	Doc Technique :
+-------------------
 
 - Le modèle éditorial
 - OTX
@@ -20,6 +20,9 @@ LODEL
 
 - Les templates ?
 - Les hooks ?
+
+Glossaire à Part
+================
 
 3.	Doc utilisateur :
 ---------------------
