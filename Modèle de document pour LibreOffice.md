@@ -11,6 +11,7 @@ Ce modèle permet d’appliquer les styles déclarés dans le modèle éditorial
 Les évolutions de ce modèle seront annoncées sur le blog de Lodel : <http://blog.lodel.org>
 
 L’archive zip contient 3 fichiers :
+
 * modele_revuesorg_fr.ott : le modèle de document
 * raccourcis_modele_revorg_fr.cfg : le fichier de configuration des raccourcis claviers permettant d’appliquer les styles au document.
 * readme.txt
