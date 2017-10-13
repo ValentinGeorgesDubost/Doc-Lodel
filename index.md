@@ -9,25 +9,23 @@ LODEL
 - Prise en main (Getting Started)
 
 
-2.	Doc Technique :
--------------------
+2.	Doc Technique (Glossaire ):
+-------------------------------
 
 - Le modèle éditorial
-- Glossaire (Listing termes utilisateur / termes techniques, définition / à quoi ça sert / où les trouver) ???
 - OTX
-- Schéma TEI et modèle Word
-- Les templates
+- Schéma TEI
+- Modèles
 - Les extensions (plugins)
+
+- Les templates ?
 - Les hooks ?
 
 3.	Doc utilisateur :
 ---------------------
 
 - administration / gestion de lodel : gestion de plusieurs sites, des utilisateurs, du modèle éditorial, des templates, paramétrage avancé...
-- alimentation d'un site lodel en contenu :
-  - site basique sans documents structurés (xml/tei) ???
-  - à partir de documents Word stylés (si Lodel installé avec otx)
-
+- alimentation d'un site lodel en contenu
 
 4.	Lodel pour Openedition : ??????
 -----------------------------------
