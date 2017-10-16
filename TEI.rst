@@ -1,4 +1,6 @@
-**Schema TEI OpenEdition**
+**********************
+Schema TEI OpenEdition
+**********************
 
 Ce projet versionne le schéma TEI utilisé sur les plateformes d'OpenEdition Revues.org et OpenEdition Books.
 Il correspond au modèle éditorial revuesorg distribué avec Lodel https://github.com/OpenEdition/lodel
