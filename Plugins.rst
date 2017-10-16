@@ -1,4 +1,6 @@
-Pour Lodel 0.9+ : implémentation d'un système de plugin
+***********
+Les Plugins
+***********
 
 **Droits**
 
