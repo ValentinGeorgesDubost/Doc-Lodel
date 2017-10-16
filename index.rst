@@ -29,18 +29,18 @@ LODEL
 
 **4.	Lodel pour Openedition : ??????**
 
-- lodel.org`https://www.lodel.org/`_: site de présentation de Lodel
-- [lodel.hypotheses.org](<https://www.lodel.hypotheses.org/>) : Blog Lodel, billets des différentes releases déployées
-- [calenda.org](<https://www.calenda.org/>) : Calendrier (colloques, séminaires, appels à contribution…)
-- [revues.org](<https://www.revues.org/>) : Portail des différentes revues publiées
-- [books.openedition.org](<https://books.openedition.org/>) : Portail des différents livres publiés
-- [maisondesrevues.org](<https://www.maisondesrevues.org/>) : doc pour revues.org et books.openedition.org
+- lodel.org https://www.lodel.org/: site de présentation de Lodel
+- lodel.hypotheses.org https://www.lodel.hypotheses.org/ : Blog Lodel, billets des différentes releases déployées
+- calenda.org https://www.calenda.org/ : Calendrier (colloques, séminaires, appels à contribution…)
+- revues.org https://www.revues.org/ : Portail des différentes revues publiées
+- books.openedition.org https://books.openedition.org/ : Portail des différents livres publiés
+- maisondesrevues.org https://www.maisondesrevues.org/ : doc pour revues.org et books.openedition.org
 
 
 **5.	Annexe : FAIT (intégré à la page Wiki de présentation)**
 
-- F.A.Q (<http://maisondesrevues.org/66/>)
-- Résumé des releases, dates et contenu (c.f <http://lodel.hypotheses.org/>)
+- F.A.Q http://maisondesrevues.org/66/
+- Résumé des releases, dates et contenu (c.f http://lodel.hypotheses.org/)
 - Get support / tickets (bugs and feature requests) (géré par Redmine)
-- Contribuer (renvoyer sur <https://github.com/OpenEdition/lodel/>)
-- License / Copyright (c.f <https://github.com/OpenEdition/lodel/>)
+- Contribuer (renvoyer sur https://github.com/OpenEdition/lodel/)
+- License / Copyright (c.f https://github.com/OpenEdition/lodel/)
