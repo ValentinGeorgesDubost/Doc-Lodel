@@ -1,6 +1,6 @@
-***************************************
-Modèle de document pour LibreOffice.rst
-***************************************
+***********************************
+Modèle de document pour LibreOffice
+***********************************
 
 **Introduction**
 
