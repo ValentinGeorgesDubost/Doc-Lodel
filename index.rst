@@ -4,8 +4,8 @@ LODEL
 
 **1. 	Pages d'entrée : FAIT**
 
-- Présentation sommaire : qu'est ce que Lodel ? (c.f <https://github.com/PatGendre/testreadthedocs/wiki>)
-- Téléchargement / Installation (c.f <http://lodel.org/downloads/vms/>)
+- Présentation sommaire : qu'est ce que Lodel ? (c.f https://github.com/PatGendre/testreadthedocs/wiki)
+- Téléchargement / Installation (c.f http://lodel.org/downloads/vms/)
 - Prise en main (Getting Started)
 
 
