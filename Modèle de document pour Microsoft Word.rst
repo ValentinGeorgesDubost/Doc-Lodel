@@ -1,3 +1,7 @@
+**************************************
+Modèle de document pour Microsoft Word
+**************************************
+
 Le modèle de document pour Word est disponible sur le dépôt GitHub dans la branche suivante : https://github.com/OpenEdition/lodel/tree/model-word.
 Des versions taguées sont également disponible dans le dépôt GitHub : model-word-vXX.  
 La dernière version est disponible en téléchargement à l'adresse suivante : https://github.com/OpenEdition/lodel/archive/model-word-v3.1.5.zip
