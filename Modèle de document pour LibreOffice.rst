@@ -1,3 +1,7 @@
+***************************************
+Modèle de document pour LibreOffice.rst
+***************************************
+
 **Introduction**
 
 Le modèle de document pour OpenOffice ou LibreOffice est disponible sur le dépôt GitHub dans la branche suivante : https://github.com/OpenEdition/lodel/tree/model-libreoffice
