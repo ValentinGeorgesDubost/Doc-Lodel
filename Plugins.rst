@@ -38,7 +38,7 @@ De plus, la classe 'Plugin' va remplir automatiquement la propriété protégée
 
 Le fichier de configuration doit contenir au moins une information qui correspond au type d'appel qui sera effectué par Lodel : 'hookType', qui peut avoir comme valeur 'class' ou 'func', qui désignent respectivement que le plugin est développé en utilisant une classe, ou des fonctions.
 
-Voici un exemple commenté d'un fichier de configuration :
+Voici un exemple commenté d'un fichier de configuration ::
 
 	<?xml version="1.0" encoding="utf-8" ?>
 	<LodelPlugin>
@@ -63,14 +63,14 @@ Voici un exemple commenté d'un fichier de configuration :
 	</LodelPlugin>
 
 
-Vous pouvez utiliser les variables de traductions dans le title du plugin ainsi que le title des paramètres. Pour celà, mettre un underscore '_' en début du title :
-<pre>
+Vous pouvez utiliser les variables de traductions dans le title du plugin ainsi que le title des paramètres. Pour celà, mettre un underscore '_' en début du title ::
+
 title="_site" // sera transformé en [@LODELADMIN.SITE]
-</pre>
+
 
 **Exemple**
 
-Voici un exemple d'un plugin rajoutant le temps de calcul de la page en commentaire HTML, seulement pour les utilisateurs authentifié avec un niveau supérieur à visiteur. Il utilise le trigger 'postview' déclenché après la génération de la page, et la variable statique $microtime contenant l'heure de début de génération de la page.
+Voici un exemple d'un plugin rajoutant le temps de calcul de la page en commentaire HTML, seulement pour les utilisateurs authentifié avec un niveau supérieur à visiteur. Il utilise le trigger 'postview' déclenché après la génération de la page, et la variable statique $microtime contenant l'heure de début de génération de la page.::
 
 	<?php
 	// ma classe doit absolument étendre la classe de base 'Plugins'
@@ -96,7 +96,7 @@ Voici un exemple d'un plugin rajoutant le temps de calcul de la page en commenta
 	}
 	?>
 
-Le même plugin n'utilisant pas de classe :
+Le même plugin n'utilisant pas de classe ::
 
 	function monPlugin_postview(&$context)
 	{
