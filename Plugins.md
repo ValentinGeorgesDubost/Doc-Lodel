@@ -1,16 +1,13 @@
 Pour Lodel 0.9+ : implémentation d'un système de plugin
 
-Droits
-------
-
+**Droits**
 
 Seuls les administreurs Lodel peuvent installer/désinstaller un plugin via la partie administration Lodel. Il est également possible de modifier la configuration par défaut du plugin qui sera effective par défaut à l'activation du plugin pour un site, et/ou de l'activer/désactiver pour l'intégralité de l'installation.
 
 À partir de là, il est possible pour chaque site d'activer/désactiver et configurer un plugin installé via la partie administration du site.
 
 
-Déclencheurs (triggers)
------------------------
+**Déclencheurs (triggers)**
 
 Pour le moment, 8 triggers sont disponibles :
 
@@ -24,8 +21,7 @@ Pour le moment, 8 triggers sont disponibles :
 -	postedit : déclenché après l'exécution d'une action par le controlleur
 
 
-Démarrage
----------
+**Démarrage**
 
 Un plugin est un répertoire contenu dans /share/plugins/custom/.
 Le nom du répertoire correspond au nom du plugin.
@@ -38,8 +34,7 @@ Si vous utilisez une classe, elle doit impérativement étendre la classe abstra
 De plus, la classe 'Plugin' va remplir automatiquement la propriété protégée $_config avec la configuration du plugin pour le site, et une méthode protégée '_checkRights' qui prend en argument un niveau d'utilisateur (entier, voir le fichier /lodel/scripts/auth.php pour les valeurs) et retourne un boolean selon si l'utilisatuer a un niveau supérieur ou égale à celui spécifié.
 
 
-config.xml
-----------
+**config.xml**
 
 Le fichier de configuration doit contenir au moins une information qui correspond au type d'appel qui sera effectué par Lodel : 'hookType', qui peut avoir comme valeur 'class' ou 'func', qui désignent respectivement que le plugin est développé en utilisant une classe, ou des fonctions.
 
@@ -73,8 +68,7 @@ Vous pouvez utiliser les variables de traductions dans le title du plugin ainsi 
 title="_site" // sera transformé en [@LODELADMIN.SITE]
 </pre>
 
-Exemple
--------
+**Exemple**
 
 Voici un exemple d'un plugin rajoutant le temps de calcul de la page en commentaire HTML, seulement pour les utilisateurs authentifié avec un niveau supérieur à visiteur. Il utilise le trigger 'postview' déclenché après la génération de la page, et la variable statique $microtime contenant l'heure de début de génération de la page.
 
@@ -117,7 +111,6 @@ Le même plugin n'utilisant pas de classe :
 	View::$page = $page;    
 	}
 
-Exemple : afficher la météo d'une ville précise dans l'interface lodel
-----------------------------------------------------------------------
+**Exemple : afficher la météo d'une ville précise dans l'interface lodel**
 
 Tous les détails : <http://blog.lodel.org/173>
