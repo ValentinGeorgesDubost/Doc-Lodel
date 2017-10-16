@@ -1,3 +1,7 @@
+*******
+READ ME
+*******
+
 # Doc-Lodel
 Documentation Lodel
 
