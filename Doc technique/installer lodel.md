@@ -8,7 +8,7 @@ Il est également possible de faire l'installation soit-même (à partir d'un os
 
 Install lodel1 sur Debian9 (VM)
 
-0. virtualbox lodel1
+virtualbox lodel1
 -----------------------
 
 (si besoin d'augmenter la taille disque VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
@@ -39,7 +39,7 @@ Install lodel1 sur Debian9 (VM)
 
 -puis reboot
 
-1. install des PAQUETS
+install des PAQUETS
 -----------------------
 
 -sudo apt install mysql-server
@@ -64,7 +64,7 @@ Install lodel1 sur Debian9 (VM)
 
 -sudo apt-get dist-upgrade
 
-2. MYSQL
+MYSQL
 ------------
 
 -cf. https://doc.ubuntu-fr.org/mysql
@@ -90,7 +90,7 @@ Install lodel1 sur Debian9 (VM)
 -cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
 
 
-3. Config PHP
+Config PHP
 --------------
 
 -sudo cp sapi/fpm/php-fpm /usr/local/bin
@@ -105,12 +105,14 @@ nano /etc/php/7.0/fpm/php-fpm.conf
 
 -à la fin du fichier remplacer:
   include=NONE/etc/php-fpm.d/*.conf
+  
 -par :
   include=/etc/php/7.0/fpm/pool.d/www.conf
+  
 -vérifier si php-fpm est lancé :
   sudo /etc/init.d/php7.0-fpm status
 
-4. config NGINX
+config NGINX
 ----------------
 
 ajouter une config
@@ -118,39 +120,40 @@ ajouter une config
  http://php.net/manual/fr/install.unix.nginx.php
 à insérer dans le bloc http {   }
 
-  server {
-    listen 9095;
-    root /home/patgendre/lodel;
-    index index.php;
-    access_log /var/log/nginx/lodel_access.log
-    error_log /var/log/nginx/lodel_error.log;
-    #server_name 127.0.0.1;
-    location / {
-    try_files $uri $uri/ =404;
-   }
-    location ~ \.php$ {
-      fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-      fastcgi_index index.php;
-      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-      fastcgi_param SCRIPT_NAME $fastcgi_script_name;
-      include fastcgi_params;
-      fastcgi_cache off;
-    }
-  location ~ /\.ht {
-    deny all;
-  }  
-   # deny access to svn files   
-   location ~ /\.svn {   
-    deny all;
-   }
+<pre><code>
+server {
+	listen 9095;
+	root /home/patgendre/lodel;
+	index index.php;
+	access_log /var/log/nginx/lodel_access.log;
+	error_log /var/log/nginx/lodel_error.log;
+	location / {
+			try_files $uri $uri/ =404;
+		}
+	use fastcgi for all php files
+	location ~ \.php$ {
+			fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+			fastcgi_index index.php;
+			fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+			fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+			include fastcgi_params;
+			fastcgi_cache off;
+		}
+	deny access to apache .htaccess files
+	location ~ /\.ht {
+			deny all;
+		}
+	location ~ /\.svn {
+			deny all;
+		}
 }
-
+</code></pre>
 
 puis relancer
 sudo /usr/sbin/nginx -s stop
 sudo /usr/sbin/nginx
 
-5. LODEL
+LODEL
 ----------
 
 -git clone https://github.com/openedition/lodel
