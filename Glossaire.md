@@ -1,5 +1,7 @@
-Lodel
+Glossaire Lodel
 =====
+
+voire aussi le [Lexique de la Maison des Revues](http://maisondesrevues.org/191)  
 
 Interface côté édition
 ----------------------
