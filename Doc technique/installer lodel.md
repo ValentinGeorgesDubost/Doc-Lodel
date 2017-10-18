@@ -1,13 +1,11 @@
-#Installation de LODEL préinstallé sur une VM
---------------------------------------------
+# Installation de LODEL préinstallé sur une VM  
 
 Il est possible d'installer une version pré-installée à l'adresse suivante : [http://lodel.org/downloads/vms/2016](http://lodel.org/downloads/vms/2016) avec un readme
 complet (La version 2016 est la plus stable à ce jour).
 
 Il est également possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge):
 
-#Installation complète sur une VM (VirtualBox)
----------------------------------------------
+# Installation complète sur une VM (VirtualBox)  
 
 (si besoin d'augmenter la taille disque VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
 
@@ -32,8 +30,7 @@ Il est également possible de faire l'installation soi-même (à partir d'un OS 
 
 -puis reboot
 
-##install des PAQUETS
------------------------
+## install des PAQUETS  
 
 -sudo apt install mysql-server
 
@@ -57,8 +54,7 @@ Il est également possible de faire l'installation soi-même (à partir d'un OS 
 
 -sudo apt-get dist-upgrade
 
-##MYSQL
-------------
+## MYSQL  
 
 -cf. https://doc.ubuntu-fr.org/mysql
 
@@ -83,8 +79,7 @@ Il est également possible de faire l'installation soi-même (à partir d'un OS 
 -cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
 
 
-##Config PHP
---------------
+## Config PHP  
 
 *à revoir*
 -sudo cp sapi/fpm/php-fpm /usr/local/bin
@@ -106,8 +101,7 @@ nano /etc/php/7.0/fpm/php-fpm.conf
 -vérifier si php-fpm est lancé :
   sudo /etc/init.d/php7.0-fpm status
 
-##config NGINX
-----------------
+## config NGINX  
 
 ajouter une config
 à la place de celle de :
@@ -147,9 +141,8 @@ puis relancer
 sudo /usr/sbin/nginx -s stop
 sudo /usr/sbin/nginx
 
-##LODEL
------
-suivre les insctructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL
+## LODEL  
+suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL
 
 -git clone https://github.com/openedition/lodel
 
