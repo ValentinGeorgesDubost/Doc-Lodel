@@ -11,7 +11,6 @@ LODEL
 - Les templates
 - Les hooks
 
-**Doc utilisateur :**
+**Doc utilisateur restante:**
 
-- administration / gestion de lodel : gestion de plusieurs sites, des utilisateurs, du modèle éditorial, des templates, paramétrage avancé...
-- alimentation d'un site lodel en contenu
+c.f maison des revues
