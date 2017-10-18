@@ -2,11 +2,11 @@
 LODEL
 *****
 
-**Compléter le Glossaire**
+**Compléter le Glossaire au fur et à mesure de l'avancement**
 
-**Faire marcher le rst ou récupérer anicenne version git**
+**Faire marcher le .rst ou récupérer anicenne version git pour les .md**
 
-**Doc Technique restante (grandes parties)**
+**Doc Technique restante (grandes parties ?)**
 
 - Les templates
 - Les hooks
