@@ -1,37 +1,32 @@
-Installation de LODEL avec une VM
--------------------------------
+Installation de LODEL préinstallé sur une VM
+--------------------------------------------
 
-Il est possible d'installer une version pré-installer à l'adresse suivante : http://lodel.org/downloads/vms/2016 avec un read me
+Il est possible d'installer une version pré-installée à l'adresse suivante : [http://lodel.org/downloads/vms/2016](http://lodel.org/downloads/vms/2016) avec un readme
 complet (La version 2016 est la plus stable à ce jour).
 
-Il est également possible de faire l'installation soit-même (à partir d'un os LINUX ou d'une VM vierge):
+Il est également possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge):
 
-virtualbox lodel1
------------------------
+Installation complète sur une VM (VirtualBox)
+---------------------------------------------
 
 (si besoin d'augmenter la taille disque VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
 
--root kourou
-
+-root votremotdepasse
 -$USER lodel
-
--domaine lodel.org
-
+-domaine votredomaine
 -supprimer la ligne avec le CD d'install dans /etc/apt/sources.list
 
--Sur Debian9 vierge, installer sudo :
+-Si vous partez d'une image Debian9 vierge, installer sudo :
 
 -https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/
 
 -su root
-
 -apt-get update
-
 -apt-get install sudo
 
--ajout en tant que root d'un fichier (nano /etc/sudoers.d/patgendre)
+-ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser)
 
--contenant 1 ligne
+-contenant 1 ligne:
 
 -$USER ALL = ALL
 
@@ -81,7 +76,7 @@ MYSQL
 
 -use mysql
 
--update user set Password="kourou" where User="root";
+-update user set Password="votremdp" where User="root";
 
 -Si un problème survient avec le mot de passe de mysql :
 
@@ -91,6 +86,7 @@ MYSQL
 Config PHP
 --------------
 
+*à revoir*
 -sudo cp sapi/fpm/php-fpm /usr/local/bin
 
 -Editer php.ini :
@@ -121,7 +117,7 @@ ajouter une config
 <pre><code>
 server {
 	listen 9095;
-	root /home/patgendre/lodel;
+	root /home/votre_user/lodel;
 	index index.php;
 	access_log /var/log/nginx/lodel_access.log;
 	error_log /var/log/nginx/lodel_error.log;
@@ -152,13 +148,13 @@ sudo /usr/sbin/nginx -s stop
 sudo /usr/sbin/nginx
 
 LODEL
-----------
+-----
+suivre les insctructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL
 
 -git clone https://github.com/openedition/lodel
 
--cf : https://github.com/OpenEdition/lodel/blob/php7-compatible/INSTALL
-
--git checkout php7-compatible
+si besoin
+-git checkout la_branche_qui_vous_intéresse
 
 -cp lodelconfig-default.php lodelconfig.php
 
@@ -168,7 +164,7 @@ LODEL
 
 -mysql -u root -p
 
--(pass :kourou)
+-(pass :votremdp)
 
 -create user 'lodeluser'@'localhost' identified by 'password';
 
@@ -188,7 +184,7 @@ LODEL
 
 Username: admin
 
-Password: Xeiph9aemahLeej
+Password: xxxxxxxxxxxxxx
 
 Tester l'installation :
 http://localhost:9095/lodeladmin
