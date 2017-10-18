@@ -4,9 +4,7 @@ Installation de LODEL avec une VM
 Il est possible d'installer une version pré-installer à l'adresse suivante : http://lodel.org/downloads/vms/2016 avec un read me
 complet (La version 2016 est la plus stable à ce jour).
 
-Il est également possible de faire l'installation soit-même (à partir d'un os LINUX ou d'une VM):
-
-Install lodel1 sur Debian9 (VM)
+Il est également possible de faire l'installation soit-même (à partir d'un os LINUX ou d'une VM vierge):
 
 virtualbox lodel1
 -----------------------
