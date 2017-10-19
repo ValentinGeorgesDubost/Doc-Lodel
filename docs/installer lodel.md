@@ -28,51 +28,51 @@ Installation complète sur une VM (VirtualBox)
 -$USER ALL = ALL
 -reboot
 
-install des PAQUETS  
--------------------
+install des PAQUETS :  
+---------------------
 
--sudo apt install mysql-server
--sudo apt install mysql-client
--sudo apt-get install php php-fpm
--sudo apt-get remove apache2
--(installe php7 sur debian9)
+- sudo apt install mysql-server
+- sudo apt install mysql-client
+- sudo apt-get install php php-fpm
+- sudo apt-get remove apache2
+- (installe php7 sur debian9)
 
--ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php)
--sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip
--sudo apt-get install git
--sudo apt-get install nginx
--sudo apt-get update
--sudo apt-get dist-upgrade
+Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
+	-sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip
+	-sudo apt-get install git
+	-sudo apt-get install nginx
+	-sudo apt-get update
+	-sudo apt-get dist-upgrade
 
 MYSQL  
 -----
 
--cf. https://doc.ubuntu-fr.org/mysql
--mysql -u root -p
--create user '$USER'@'localhost' identified by 'lodel';
--GRANT ALL PRIVILEGES ON *.* TO '$USER'@'localhost';
--changement du mot de passe du root sur la base :
-	-su root
-	-mysql -u root
-	-use mysql
-	-update user set Password="votremdp" where User="root";
--Si un problème survient avec le mot de passe de mysql, cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
+- cf. https://doc.ubuntu-fr.org/mysql :
+- mysql -u root -p
+- create user '$USER'@'localhost' identified by 'lodel';
+- GRANT ALL PRIVILEGES ON *.* TO '$USER'@'localhost';
+- changement du mot de passe du root sur la base :
+	- su root
+	- mysql -u root
+	- use mysql
+	- update user set Password="votremdp" where User="root";
+- Si un problème survient avec le mot de passe de mysql, cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
 
 Config PHP  
 ----------
 
--sudo cp sapi/fpm/php-fpm /usr/local/bin
--Editer php.ini :
-	-sudo nano /etc/php/7.0/fpm/php.ini
--Trouver la directive cgi.fix_pathinfo= et modifier là comme ceci (la décommenter):
-	-cgi.fix_pathinfo = 0
+- sudo cp sapi/fpm/php-fpm /usr/local/bin
+- Editer php.ini :
+	- sudo nano /etc/php/7.0/fpm/php.ini
+- Trouver la directive cgi.fix_pathinfo= et modifier là comme ceci (la décommenter):
+	- cgi.fix_pathinfo = 0
 
--nano /etc/php/7.0/fpm/php-fpm.conf : à la fin du fichier remplacer:
-	-include=NONE/etc/php-fpm.d/*.conf  
-	-par :
+- nano /etc/php/7.0/fpm/php-fpm.conf : à la fin du fichier remplacer:
+	- include=NONE/etc/php-fpm.d/*.conf  
+	- par :
 	- include=/etc/php/7.0/fpm/pool.d/www.conf
--vérifier si php-fpm est lancé :
-  sudo /etc/init.d/php7.0-fpm status
+- vérifier si php-fpm est lancé :
+	- sudo /etc/init.d/php7.0-fpm status
 
 config NGINX  
 ------------
