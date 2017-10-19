@@ -1,11 +1,1 @@
-pages:
-- 'index.md'
-- 'Modèle éditorial.md'
-- 'OTX.md'
-- 'TEI.md'
-- 'Modèle de document pour LibreOffice.md'
-- 'Modèle de document pour Microsoft Word.md'
-- 'METS.md'
-- 'Plugins.md'
-- 'Glossaire.md'
-- 'Doc technique/installer lodel.md'
+Test

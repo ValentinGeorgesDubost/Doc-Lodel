@@ -1,11 +1,12 @@
 pages:
-- 'index.md'
-- 'Modèle éditorial.md'
-- 'OTX.md'
-- 'TEI.md'
-- 'Modèle de document pour LibreOffice.md'
-- 'Modèle de document pour Microsoft Word.md'
-- 'METS.md'
-- 'Plugins.md'
+- Accueil: 'index.md'
 - 'Glossaire.md'
 - 'Doc technique/installer lodel.md'
+- 'Modèle éditorial.md'
+- 'TEI.md'
+- Lodel et Word
+  - 'OTX.md'
+  - 'Modèle de document pour Microsoft Word.md"
+  - 'Modèle de document pour LibreOffice.md'
+- Imports de collections (livres, numéro de revue): 'METS.md'
+- Les extensions (plugins): 'Plugins.md'
