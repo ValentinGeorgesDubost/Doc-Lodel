@@ -1,14 +1,14 @@
 site_name: Doc Technique Lodel
 
 pages:
-- Accueil: 'docs/index.md'
-- 'docs/Glossaire.md'
-- 'docs/Doc technique/installer lodel.md'
-- 'docs/Modèle éditorial.md'
-- 'docs/TEI.md'
+- Accueil: 'index.md'
+- 'Glossaire.md'
+- 'Doc technique/installer lodel.md'
+- 'Modèle éditorial.md'
+- 'TEI.md'
 - Lodel et Word
-  - 'docs/OTX.md'
-  - 'docs/Modèle de document pour Microsoft Word.md"
-  - 'docs/Modèle de document pour LibreOffice.md'
-- Imports de collections (livres, numéro de revue): 'docs/METS.md'
-- Les extensions (plugins): 'docs/Plugins.md'
+  - 'OTX.md'
+  - 'Modèle de document pour Microsoft Word.md"
+  - 'Modèle de document pour LibreOffice.md'
+- Imports de collections (livres, numéro de revue): 'METS.md'
+- Les extensions (plugins): 'Plugins.md'
