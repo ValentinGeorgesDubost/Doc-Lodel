@@ -3,7 +3,7 @@ site_name: Doc Technique Lodel
 pages:
 - Accueil: 'index.md'
 - 'Glossaire.md'
-- 'Doc technique/installer lodel.md'
+- Installation complète Lodel: 'installer lodel.md'
 - 'Modèle éditorial.md'
 - Conversion de fichiers OTX et TEI: 'OTX.md'
 - 'Modèle de document pour Microsoft Word.md'
