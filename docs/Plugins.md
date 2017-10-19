@@ -10,10 +10,10 @@ Seuls les administreurs Lodel peuvent installer/désinstaller un plugin via la p
 À partir de là, il est possible pour chaque site d'activer/désactiver et configurer un plugin installé via la partie administration du site.
 
 
-Déclencheurs (triggers)
+Déclencheurs (hooks)
 -----------------------
 
-Pour le moment, 8 triggers sont disponibles :
+Pour le moment, 8 hooks sont disponibles :
 
 -	preauth : déclenché avant l'authentification de l'utilisateur
 -	postauth : déclenché après l'authentification de l'utilisateur
