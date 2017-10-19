@@ -1,3 +1,5 @@
+site_name: Doc Technique Lodel
+
 pages:
 - Accueil: 'docs/index.md'
 - 'docs/Glossaire.md'
