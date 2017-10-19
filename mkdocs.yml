@@ -6,9 +6,8 @@ pages:
 - 'Doc technique/installer lodel.md'
 - 'Modèle éditorial.md'
 - 'TEI.md'
-- Lodel et Word
-  - 'OTX.md'
-  - 'Modèle de document pour Microsoft Word.md"
-  - 'Modèle de document pour LibreOffice.md'
+- 'OTX.md'
+- 'Modèle de document pour Microsoft Word.md"
+- 'Modèle de document pour LibreOffice.md'
 - Imports de collections (livres, numéro de revue): 'METS.md'
 - Les extensions (plugins): 'Plugins.md'
