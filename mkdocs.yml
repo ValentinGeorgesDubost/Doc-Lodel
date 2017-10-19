@@ -5,7 +5,7 @@ pages:
 - 'Glossaire.md'
 - 'Doc technique/installer lodel.md'
 - 'Modèle éditorial.md'
-- Conversion de fichiers : OTX et TEI: 'OTX.md'
+- Conversion de fichiers OTX et TEI: 'OTX.md'
 - 'Modèle de document pour Microsoft Word.md'
 - 'Modèle de document pour LibreOffice.md'
 - Imports de collections (livres, numéro de revue): 'METS.md'
