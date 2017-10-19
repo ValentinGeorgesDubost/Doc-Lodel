@@ -1,16 +1,11 @@
-LODEL
-=====
-
-Compléter le Glossaire au fur et à mesure de l'avancement
----------------------------------------------------------
-
-Doc Technique restante (grandes parties ?)
-------------------------------------------
-
-- Les templates
-- Les hooks
-
-Doc utilisateur restante:
--------------------------
-
-c.f maison des revues
+pages:
+- 'index.md'
+- 'Modèle éditorial.md'
+- 'OTX.md'
+- 'TEI.md'
+- 'Modèle de document pour LibreOffice.md'
+- 'Modèle de document pour Microsoft Word.md'
+- 'METS.md'
+- 'Plugins.md'
+- 'Glossaire.md'
+- 'Doc technique/installer lodel.md'
