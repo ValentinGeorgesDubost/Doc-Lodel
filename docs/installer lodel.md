@@ -15,7 +15,7 @@ Installation complète sur une VM (VirtualBox)
 - domaine votredomaine
 - supprimer la ligne avec le CD d'install dans /etc/apt/sources.list
 
--Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/) :
+Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/) :
 - su root
 - apt-get update
 - apt-get install sudo
