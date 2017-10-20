@@ -37,11 +37,12 @@ install des PAQUETS :
 - (installe php7 sur debian9)
 
 Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
-	-sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip
-	-sudo apt-get install git
-	-sudo apt-get install nginx
-	-sudo apt-get update
-	-sudo apt-get dist-upgrade
+
+-sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip
+-sudo apt-get install git
+-sudo apt-get install nginx
+-sudo apt-get update
+-sudo apt-get dist-upgrade
 
 MYSQL  
 -----
@@ -128,8 +129,8 @@ Au besoin :
 - (pass :votremdp)
 - create user 'lodeluser'@'localhost' identified by 'password';
 - CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-- #GRANT ALL on `lodel`.* TO `lodeluser`@`localhost` IDENTIFIED BY "password";
-- GRANT ALL on *.* TO `lodeluser`@`localhost` IDENTIFIED BY "password";
+- GRANT ALL on `lodel`.* TO `lodeluser`@`localhost` identified by "password";
+- GRANT ALL on *.* TO `lodeluser`@`localhost` identified by "password";
 - puis mettre à jour lodelconfig.php avec ces infos
 
 Installer en se connectant à -127.0.0.1/lodeladmin/install.php (après installation des libs php7.0 manquantes) completed :
