@@ -1,4 +1,6 @@
-Bienvenue sur le wiki de Lodel !   
+Bienvenue sur la doc technique de Lodel !
+=========================================
+
 <img src="https://github.com/OpenEdition/lodel/blob/master/share/images/lodel_couleur.png" width="120">
 
 Qu'est-ce que Lodel ?
