@@ -16,11 +16,13 @@ Installation complète sur une VM (VirtualBox)
 - supprimer la ligne avec le CD d'install dans /etc/apt/sources.list
 
 Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/) :
+
 - su root
 - apt-get update
 - apt-get install sudo
 
 ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
+
 - contenant 1 ligne:
 - $USER ALL = ALL
 - reboot
@@ -117,6 +119,7 @@ Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INST
 - git clone https://github.com/openedition/lodel
 
 Au besoin :
+
 - git checkout la_branche_qui_vous_intéresse
 - cp lodelconfig-default.php lodelconfig.php
 - grep install_key lodelconfig.php
@@ -130,6 +133,7 @@ Au besoin :
 - puis mettre à jour lodelconfig.php avec ces infos
 
 Installer en se connectant à -127.0.0.1/lodeladmin/install.php (après installation des libs php7.0 manquantes) completed :
+
 - Username: admin
 - Password: xxxxxxxxxxxxxx
 
