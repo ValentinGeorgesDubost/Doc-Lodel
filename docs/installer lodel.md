@@ -15,15 +15,15 @@ Installation complète sur une VM (VirtualBox)
 - domaine votredomaine
 - supprimer la ligne avec le CD d'install dans /etc/apt/sources.list
 
--Si vous partez d'une image Debian9 vierge, installer sudo : https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/ :
+-Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/) :
 - su root
 - apt-get update
 - apt-get install sudo
 
 ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
-	- contenant 1 ligne:
-	- $USER ALL = ALL
-	- reboot
+- contenant 1 ligne:
+- $USER ALL = ALL
+- reboot
 
 install des PAQUETS :  
 ---------------------
@@ -113,25 +113,25 @@ server {
 LODEL  
 -----
 
-suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :
+Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :
 - git clone https://github.com/openedition/lodel
-- si besoin :
-	- git checkout la_branche_qui_vous_intéresse
-	- cp lodelconfig-default.php lodelconfig.php
-	- grep install_key lodelconfig.php
-	- touch 03dde1bd-c6b6-4424-8618-c4488e30484a
-	- mysql -u root -p
-	- (pass :votremdp)
-	- create user 'lodeluser'@'localhost' identified by 'password';
-	- CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-	- #GRANT ALL on `lodel`.* TO `lodeluser`@`localhost` IDENTIFIED BY "password";
-	- GRANT ALL on *.* TO `lodeluser`@`localhost` IDENTIFIED BY "password";
-	- puis mettre à jour lodelconfig.php avec ces infos
 
-- installer en se connectant à -127.0.0.1/lodeladmin/install.php
-- (après installation des libs php7.0 manquantes) completed :
-	- Username: admin
-	- Password: xxxxxxxxxxxxxx
+Au besoin :
+- git checkout la_branche_qui_vous_intéresse
+- cp lodelconfig-default.php lodelconfig.php
+- grep install_key lodelconfig.php
+- touch 03dde1bd-c6b6-4424-8618-c4488e30484a
+- mysql -u root -p
+- (pass :votremdp)
+- create user 'lodeluser'@'localhost' identified by 'password';
+- CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+- #GRANT ALL on `lodel`.* TO `lodeluser`@`localhost` IDENTIFIED BY "password";
+- GRANT ALL on *.* TO `lodeluser`@`localhost` IDENTIFIED BY "password";
+- puis mettre à jour lodelconfig.php avec ces infos
+
+Installer en se connectant à -127.0.0.1/lodeladmin/install.php (après installation des libs php7.0 manquantes) completed :
+- Username: admin
+- Password: xxxxxxxxxxxxxx
 
 Tester l'installation :
 -----------------------
