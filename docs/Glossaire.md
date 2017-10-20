@@ -1,4 +1,4 @@
-Glossaire Lodel
+Glossaire Lodel (à mettre à la fin de la doc ; dans un 2ème temps à mettre dans la Doc Utilisateurs, si on la crée dans readthedocs)
 ===============
 
 Interface côté édition
