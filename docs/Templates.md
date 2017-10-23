@@ -1,1 +1,1 @@
-C.F https://github.com/ValentinGeorgesDubost/Doc-Lodel/wiki/Lodelscript
+A faire : introduction template, suivi de Lodelscript
