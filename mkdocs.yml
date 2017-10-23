@@ -4,7 +4,7 @@ pages:
 - Accueil: 'index.md'
 - Installation complète de Lodel: 'installer lodel.md'
 - Les données de Lodel: 'Modèle éditorial.md'
-- Imports de collections (livres, numéro de revue): 'METS.md'
+- Les contenus structurés: 'Contenus structurés.md'
 - La chaine de publication Word: 'Modèle de document pour Microsoft Word.md'
 - 'Modèle de document pour LibreOffice.md'
 - Conversion de fichiers OTX: 'OTX.md'
