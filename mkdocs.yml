@@ -3,7 +3,7 @@ site_name: Doc Technique Lodel
 pages:
 - Accueil: 'index.md'
 - Installation complète de Lodel: 'installer lodel.md'
-- Les données de Lodel: 'Modèle éditorial.md'
+'Modèle éditorial.md'
 - Les contenus structurés: 'Contenus structurés.md'
 - La chaine de publication Word: 'Modèle de document pour Microsoft Word.md'
 - Conversion de fichiers OTX: 'OTX.md'
