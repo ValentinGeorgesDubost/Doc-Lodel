@@ -1,3 +1,8 @@
+XML
+===
+
+XML, eXtensible Markup Language, est un langage descriptif, s'appuyant sur des balises, permettant de structurer des contenus. Il permet d’organiser des données. C’est un format ouvert qui permet l’utilisation des données dans différents contextes ou avec différentes applications (interopérabilité). Par exemple au flux RSS est conforme à un schéma XML, ce qui lui permet d’être interprété dans n’importe quel agrégateur de flux ou d’être utilisé pour la syndication de contenu. La structure d'un document XML est définissable et validable par un schéma (anciennement : DTD). XML schema, DTD : Un document DTD, XML schema est un document permettant de définir un modèle de structure pour un certain nombre de documents XML. Il permet notamment de vérifier la validité de ce document. Un document XML schema est lui-même un document XML alors que DTD utilise une syntaxe spécifique.
+
 Schema TEI OpenEdition
 ======================
 
