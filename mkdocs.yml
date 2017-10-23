@@ -1,7 +1,7 @@
 site_name: Doc Technique Lodel
 
 pages:
-- Accueil: 'vuedensemble.md'
+- Accueil: 'index.md'
 - Installation complète de Lodel: 'installer lodel.md'
 - Les données de Lodel: 'Modèle éditorial.md'
 - Imports de collections (livres, numéro de revue): 'METS.md'
