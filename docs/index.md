@@ -19,4 +19,4 @@ avec un modèle éditorial
 - chaîne de publication Word : 
 - chaîne
 
-intégrer https://lodel.hypotheses.org/configurer/architecture-technique
+intégrer <https://lodel.hypotheses.org/configurer/architecture-technique>
