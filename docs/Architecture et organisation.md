@@ -25,10 +25,6 @@ Dans Lodel, pour chaque requête effectuée par un client, les étapes suivantes
 - Le contrôleur appelle la vue adéquate, en lui passant la réponse reçue du modèle.
 - La vue est envoyée au client.
 
-Le schéma suivant résume ces étapes :
-
-- Erreur lors de la création de la miniature : Impossible d’enregistrer la vignette sur la destination
-
 
 Le contrôleur
 -------------
@@ -73,9 +69,6 @@ Différence entre les étapes 5 et 6 (ou quand a-t-on besoin du modèle ?) :
 - le modèle est appelé pour toutes les requêtes contenant les paramètres do (action à effectuer) et lo (classe métier avec laquelle effectuer l’action). En gros, le modèle est appelé pour effectuer des actions susceptibles de modifier les données dans la base (appel systématique dans la partie administration de l’interface privée).
 - la vue est appelée pour les requêtes contenant les paramètres id (ou un identifiant littéral) ou page (pour l’appel d’une page statique). Elle est directement appelée lorsque que les accès à la base de données se font uniquement en lecture.
 
-Résumons tout cela avec un diagramme de séquence :
-
-Erreur lors de la création de la miniature : Impossible d’enregistrer la vignette sur la destination
 À MÉDITER POUR LA VERSION 0.9 : réunir tous ces fichiers dans un seul, pour éviter de recopier les mêmes lignes de code dans des fichiers différents, et centraliser le routage.
 
 Le fichier controler.php
@@ -106,10 +99,6 @@ Lorsque le contrôleur demande l’exécution d’une action, le modèle effectu
 - La classe logic instanciée se charge d’instancier la classe DAO requise pour accéder aux données : une classe DAO fille correspond à une table dans la base. Elle contient la description en PHP de la table (liste des champs) et le niveau de droits requis pour effectuer des actions. La classe DAO mère définit les méthodes permettant de manipuler les données dans la base.
 - La classe DAO instanciée utilise la couche adodb pour effectuer les opérations sur les données.
 - La couche adodb renvoie ses résultats à la classe DAO, qui les transmet à la classe logic, qui les transmet au contrôleur.
-
-Résumons tout cela avec un diagramme de séquence :
-
-Erreur lors de la création de la miniature : Impossible d’enregistrer la vignette sur la destination
 
 La vue
 ------
