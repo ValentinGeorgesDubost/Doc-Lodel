@@ -14,8 +14,8 @@ Lodel est structuré selon le modèle MVC (Modèle-Vue-Contrôleur), qui vise à
 
 Pour plus d’informations concernant l’architecture MVC, Cf. :
 
-- une très brève explication : http://fr.wikipedia.org/wiki/Mod%C3%A8le-Vue-Contr%C3%B4leur
-- une documentation détaillée sur une implémentation possible en PHP : http://tahe.developpez.com/web/php/mvc/
+- une très brève explication : <http://fr.wikipedia.org/wiki/Mod%C3%A8le-Vue-Contr%C3%B4leur>
+- une documentation détaillée sur une implémentation possible en PHP : <http://tahe.developpez.com/web/php/mvc/>
 
 Dans Lodel, pour chaque requête effectuée par un client, les étapes suivantes sont exécutées :
 
