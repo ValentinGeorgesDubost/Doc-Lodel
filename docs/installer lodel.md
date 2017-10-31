@@ -14,7 +14,7 @@ Il est cependant bien sûr possible de faire l'installation soi-même (à partir
 - Aller à l'adresse configurée avec un navigateur web, suivre les instructions. Il faudra donner temporairement les droits d'écriture sur le dossier d'une instance de site.
 - Vérifer qu'à l'intérieur du dossier d'un site l'utilisateur du serveur HTTP a bien les droits d'écriture sur les dossiers: upload, docannexe, docannexe/file, docannexe/image, lodel/sources, lodel/icons
 
-##Détail des étapes  
+## Détail des étapes  
 (si besoin, augmenter la taille disque: VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
 
 - root votremotdepasse
@@ -34,7 +34,7 @@ ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
 - $USER ALL = ALL
 - reboot
 
-###install des PAQUETS :  
+### install des PAQUETS :   
 
 - sudo apt install mysql-server
 - sudo apt install mysql-client
@@ -50,8 +50,7 @@ Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
 -sudo apt-get update
 -sudo apt-get dist-upgrade
 
-Config MYSQL  
-------------
+### Config MYSQL  
 
 - cf. https://doc.ubuntu-fr.org/mysql :
 - mysql -u root -p
@@ -64,8 +63,7 @@ Config MYSQL
 	- update user set Password="votremdp" where User="root";
 - Si un problème survient avec le mot de passe de mysql, cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
 
-Config PHP  
-----------
+###Config PHP   
 
 - sudo cp sapi/fpm/php-fpm /usr/local/bin
 - Editer php.ini :
@@ -80,8 +78,7 @@ Config PHP
 - vérifier si php-fpm est lancé :
 	- sudo /etc/init.d/php7.0-fpm status
 
-config NGINX  
-------------
+###config NGINX  
 
 ajouter une config à la place de celle de : http://php.net/manual/fr/install.unix.nginx.php
 
@@ -119,8 +116,7 @@ server {
 	- sudo /usr/sbin/nginx -s stop
 	- sudo /usr/sbin/nginx
 
-Création et config de l'instance LODEL  
---------------------------------------
+### Création et config de l'instance LODEL  
 
 Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :
 - git clone https://github.com/openedition/lodel
@@ -144,7 +140,7 @@ Installer en se connectant à -127.0.0.1/lodeladmin/install.php (après installa
 - Username: admin
 - Password: xxxxxxxxxxxxxx
 
-Tester l'installation :
------------------------
+### Tester l'installation  
 
+Pour se connecter au bock-office (Admin lodel):  
 http://localhost:9095/lodeladmin
