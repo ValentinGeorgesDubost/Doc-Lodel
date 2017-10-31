@@ -63,7 +63,7 @@ Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
 	- update user set Password="votremdp" where User="root";
 - Si un problème survient avec le mot de passe de mysql, cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
 
-###Config PHP   
+### Config PHP    
 
 - sudo cp sapi/fpm/php-fpm /usr/local/bin
 - Editer php.ini :
@@ -78,7 +78,7 @@ Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
 - vérifier si php-fpm est lancé :
 	- sudo /etc/init.d/php7.0-fpm status
 
-###config NGINX  
+### config NGINX   
 
 ajouter une config à la place de celle de : http://php.net/manual/fr/install.unix.nginx.php
 
