@@ -1,14 +1,14 @@
 Installation de LODEL préinstallé sur une VM  
 ============================================
 
-Il est recommandé d'installer une version pré-installée à l'adresse suivante : [http://lodel.org/downloads/vms/2016](http://lodel.org/downloads/vms/2017) avec un readme complet (La version 2016 reste cependant la plus stable à ce jour).
+Pour tester le logiciel, il est recommandé d'installer une version pré-installée à l'adresse suivante : [http://lodel.org/downloads/vms/2016](http://lodel.org/downloads/vms/2017) avec un readme complet (La version 2016 reste cependant la plus stable à ce jour).
 
-Il est cependant également possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge):
+Il est cependant bien sûr possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge):
 
-Installation complète sur une VM (VirtualBox)  
-=============================================
+Installation sur une VM (VirtualBox)  
+====================================
 
-(si besoin d'augmenter la taille disque VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
+(si besoin, augmenter la taille disque: VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
 
 - root votremotdepasse
 - $USER lodel
@@ -44,8 +44,8 @@ Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
 -sudo apt-get update
 -sudo apt-get dist-upgrade
 
-MYSQL  
------
+Config MYSQL  
+------------
 
 - cf. https://doc.ubuntu-fr.org/mysql :
 - mysql -u root -p
@@ -113,15 +113,15 @@ server {
 	- sudo /usr/sbin/nginx -s stop
 	- sudo /usr/sbin/nginx
 
-LODEL  
------
+Création et config de l'instance LODEL  
+--------------------------------------
 
 Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :
 - git clone https://github.com/openedition/lodel
 
-Au besoin :
-
+Au besoin: 
 - git checkout la_branche_qui_vous_intéresse
+Ensuite:
 - cp lodelconfig-default.php lodelconfig.php
 - grep install_key lodelconfig.php
 - touch 03dde1bd-c6b6-4424-8618-c4488e30484a
