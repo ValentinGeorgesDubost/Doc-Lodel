@@ -8,6 +8,17 @@ Il est cependant bien sûr possible de faire l'installation soi-même (à partir
 Installation sur une VM (VirtualBox)  
 ====================================
 
+Principes d'une installation  
+----------------------------
+- Cloner de préférence la dernière version tagguée.
+- Faire pointer le virtual host sur la racine de l'installation Lodel.
+- L'utilisateur du serveur HTTP doit avoir les droits de lecture sur tous les fichiers.
+- Créer une base de donnée et un utilisateur ayant les droits de modification sur cette base.
+- Aller à l'adresse configurée avec un navigateur web, suivre les instructions. Il faudra donner temporairement les droits d'écriture sur le dossier d'une instance de site.
+- Vérifer qu'à l'intérieur du dossier d'un site l'utilisateur du serveur HTTP a bien les droits d'écriture sur les dossiers: upload, docannexe, docannexe/file, docannexe/image, lodel/sources, lodel/icons
+
+Détail des étapes
+-----------------
 (si besoin, augmenter la taille disque: VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
 
 - root votremotdepasse
