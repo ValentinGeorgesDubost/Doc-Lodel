@@ -1,12 +1,12 @@
-#Installation de LODEL préinstallé sur une VM  
+# Installation de LODEL préinstallé sur une VM  
 
 Pour tester le logiciel, il est recommandé d'installer une version pré-installée à l'adresse suivante : [http://lodel.org/downloads/vms/2016](http://lodel.org/downloads/vms/2017) avec un readme complet (La version 2016 reste cependant la plus stable à ce jour).
 
 Il est cependant bien sûr possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge):
 
-#Installation sur une VM (VirtualBox)   
+# Installation sur une VM (VirtualBox)   
 
-##Principes d'une installation  
+## Principes d'une installation  
 - Cloner de préférence la dernière version tagguée.
 - Faire pointer le virtual host sur la racine de l'installation Lodel.
 - L'utilisateur du serveur HTTP doit avoir les droits de lecture sur tous les fichiers.
