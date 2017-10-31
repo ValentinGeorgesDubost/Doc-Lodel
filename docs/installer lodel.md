@@ -1,15 +1,12 @@
-Installation de LODEL préinstallé sur une VM  
-============================================
+#Installation de LODEL préinstallé sur une VM  
 
 Pour tester le logiciel, il est recommandé d'installer une version pré-installée à l'adresse suivante : [http://lodel.org/downloads/vms/2016](http://lodel.org/downloads/vms/2017) avec un readme complet (La version 2016 reste cependant la plus stable à ce jour).
 
 Il est cependant bien sûr possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge):
 
-Installation sur une VM (VirtualBox)  
-====================================
+#Installation sur une VM (VirtualBox)   
 
-Principes d'une installation  
-----------------------------
+##Principes d'une installation  
 - Cloner de préférence la dernière version tagguée.
 - Faire pointer le virtual host sur la racine de l'installation Lodel.
 - L'utilisateur du serveur HTTP doit avoir les droits de lecture sur tous les fichiers.
@@ -17,8 +14,7 @@ Principes d'une installation
 - Aller à l'adresse configurée avec un navigateur web, suivre les instructions. Il faudra donner temporairement les droits d'écriture sur le dossier d'une instance de site.
 - Vérifer qu'à l'intérieur du dossier d'un site l'utilisateur du serveur HTTP a bien les droits d'écriture sur les dossiers: upload, docannexe, docannexe/file, docannexe/image, lodel/sources, lodel/icons
 
-Détail des étapes
------------------
+##Détail des étapes  
 (si besoin, augmenter la taille disque: VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
 
 - root votremotdepasse
@@ -38,8 +34,7 @@ ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
 - $USER ALL = ALL
 - reboot
 
-install des PAQUETS :  
----------------------
+###install des PAQUETS :  
 
 - sudo apt install mysql-server
 - sudo apt install mysql-client
