@@ -117,8 +117,6 @@ Des métadonnées pour les moteurs de recherche
 
 Lodel permet de générer automatiquement une liste de métadonnées dans l’en-tête des fichiers HTML à partir des renseignements qui ont été donnés au niveau du traitement de texte. Par défaut, les métadonnées suivent la norme Dublin Core : elles sont indiquées sous cette forme dans le code source de la page web : <meta name= »DC.Title, Subject, Creator, Date, Language…
 
-Les métadonnées Dublin Core
-
 Les métadonnées fournies dans l’en-tête HTML servent aux robots d’indexation qu’utilisent les moteurs de recherche.
 
 Utiliser au mieux les métadonnées dans un document HTML, c’est avoir de bonnes chances d’être bien référencé dans les principaux moteurs. C’est encore plus vrai pour les moteurs spécialisés qui utilisent souvent le standard Dublin Core de description de métadonnées.
