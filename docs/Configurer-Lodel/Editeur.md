@@ -117,13 +117,16 @@ La page d’édition des métadonnées : vue d’ensemble
 
 Prenons-là de haut en bas, en commençant par la colonne de gauche. Cette colonne (dans le cas du modèle éditorial de Revues.org) :
 
-Affiche le titre, sous-titre, titre traduit (champ éditable)
-Affiche le résumé (mais le champ n’est pas éditable)
-Affiche le début du texte (non éditable), pour mémoire
-Permet d’associer un fichier PDF, afin de joindre un fac-similé.
-Permet d’éditer des métadonnées (date de publication, langue)
+- Affiche le titre, sous-titre, titre traduit (champ éditable)
+- Affiche le résumé (mais le champ n’est pas éditable)
+- Affiche le début du texte (non éditable), pour mémoire
+- Permet d’associer un fichier PDF, afin de joindre un fac-similé.
+- Permet d’éditer des métadonnées (date de publication, langue)
+
 Les entrées d’index sont perfectionnées. On peut rajouter des entrées d’index à partir de l’ensemble des entrées disponibles, ou en supprimer ; il suffit de la sélectionner avec le curseur, et de cliquer sur le bouton du dessus pour l’ajouter aux entrées choisies, celui du dessous pour l’effacer des entrées choisies.
+
 Les entrées d’index
+-------------------
 
 Grâce aux boutons « Ajouter » et « Modifier », on peut ajouter des entrées non présentes dans la liste des entrées disponibles.
 Le champ d’édition de l’auteur est plus complexe, et permet d’ajouter de nombreuses informations.
@@ -135,7 +138,7 @@ Le bloc « Information sur l’entité » permet, grâce au menu déroulant, de 
 
 Il est possible, juste en dessous, de modifier le statut d’un document
 
-Lorsqu’on modifie le statut d’un document, la modification opère tout de suite, sans confirmation. Si on a effectué des modifications dans la colonne de gauche de la page d’ « édition des donénes relatives à l’entité » (modification du titre, etc.), il faut valider avant de modifier le statut du document, faute de quoi les modifications seront perdues. Comme dans Lodel 0.7, il est possible de déplacer un document. À présent, il est également possible de déplacer des numéros entiers
+Lorsqu’on modifie le statut d’un document, la modification opère tout de suite, sans confirmation. Si on a effectué des modifications dans la colonne de gauche de la page d’« édition des données relatives à l’entité » (modification du titre, etc.), il faut valider avant de modifier le statut du document, faute de quoi les modifications seront perdues. Comme dans Lodel 0.7, il est possible de déplacer un document. À présent, il est également possible de déplacer des numéros entiers
 
 Le bloc « documents annexes » permet d’ajouter des documents de diverses natures : commentaire, image, vidéo, son, URL… Il s’agit d’anticiper les besoins des revues dans quelques années.
 Si on ajoute une image (ou une vidéo), une page d’édition s’ouvre, qui permet de saisir le titre de l’image, de la télécharger, puis de la décrire dans un petit éditeur en WYSIWYG. Par défaut, Lodel génèrera une vignette, mais on peut la générer soit-même, afin, par exemple, de recadrer une image plutôt que de laisser le redimensionnement automatique, qui peut rendre la vignette complètement illisible.
