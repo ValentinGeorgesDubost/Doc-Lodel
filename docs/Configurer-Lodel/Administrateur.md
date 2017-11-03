@@ -9,7 +9,6 @@ La page « Utilisateurs et droits »
 
 Les informations sur les utilisateurs du site sont affichées sur la page « Gestion des utilisateurs ». Il est possible de gérer les sessions, de modifier les comptes ou de les supprimer.
 
-Erreur lors de la création de la miniature : Impossible d’enregistrer la vignette sur la destination
 cliquer sur « Effacer le log des sessions » pour effacer l’historique des connexions à Lodel de cet utilisateur.
 cliquer sur « Modifier » pour modifier le compte de l’utilisateur, il dirige vers la page « Edition d’un utilisateur »(voir ci-dessous).
 cliquer sur « Supprimer » pour supprimer le compte. Le compte de l’utilisateur devenu inactif est déplacé dans une corbeille. Il est possible de le récupérer en cliquant sur « Récupérer » ou de le détruire définitivement en cliquant sur « Détruire ».
