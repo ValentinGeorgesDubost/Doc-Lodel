@@ -23,7 +23,7 @@ La structure et l’affichage des données sont définis dans le modèle éditor
 
 - le ME de Revues.org, conçu pour la mise en ligne de revues scientifiques spécialisées dans les sciences humaines ;
 - un ME générique, qui contient tous les champs obligatoires pour fonctionner sous Lodel, ainsi que les options de configuration d’un Servoo, et qui permet donc de structurer les données selon les besoins précis de l’utilisateur.
-L’administrateur Lodel dispose d’une fonctionnalité lui permettant d’exporter son ME au format SQL. Il peut en outre choisir de sauvegarder, au même moment, les templates, feuilles de style, images et scripts Javascript associés à ce ME. L’importation d’un ME sauvegardé ne peut être effectuée que lors de la création d’un nouveau site, avant qu’une seule classe n’ait été définie. Il est envisagé, pour les futures versions de Lodel, de pouvoir importer et exporter au format XML le ME, ainsi que ses éléments pris séparément (Cf. METS ?).
+L’administrateur Lodel dispose d’une fonctionnalité lui permettant d’exporter son ME au format SQL. Il peut en outre choisir de sauvegarder, au même moment, les templates, feuilles de style, images et scripts Javascript associés à ce ME. L’importation d’un ME sauvegardé ne peut être effectuée que lors de la création d’un nouveau site, avant qu’une seule classe n’ait été définie. Il est envisagé, pour les futures versions de Lodel, de pouvoir importer et exporter au format XML le ME, ainsi que ses éléments pris séparément (Cf. METS).
 
 Structuration du ME
 -------------------
