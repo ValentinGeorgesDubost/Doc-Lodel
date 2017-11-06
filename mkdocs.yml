@@ -5,6 +5,7 @@ pages:
 - Installation complète de Lodel: 'installer lodel.md'
 - 'Architecture et organisation.md'
 - 'Modèle éditorial.md'
+
 - LES CONTENUS STRUCTURES:
   - 'Les-contenus-structurés/XML.md'
   - 'Les-contenus-structurés/Schéma TEI.md'
@@ -17,10 +18,11 @@ pages:
   - Conversion de fichiers OTX: 'La-chaine-de-publication-Word/OTX.md'
 
 - LES TEMPLATES:
-- Introduction au modèle: 'Les-templates/Templates.md'
-- 'Les-templates/Lodelscript.md'
+  - Introduction au modèle: 'Les-templates/Templates.md'
+  - 'Les-templates/Lodelscript.md'
 
 - Les extensions (plugins): 'Plugins.md'
+
 - 'Configurer-Lodel/Présentation de Lodel.md'
 - 'Configurer-Lodel/Principales notions.md'
 - 'Configurer-Lodel/Fonctionnalités.md'
