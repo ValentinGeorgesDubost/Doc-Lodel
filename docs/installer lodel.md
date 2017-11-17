@@ -134,8 +134,8 @@ mysql -u root -p
 #(pass :votremdp)
 create user 'lodeluser'@'localhost' identified by 'password';
 CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-GRANT ALL on `lodel`.* TO `lodeluser`@`localhost` identified by "password";
-GRANT ALL on *.* TO `lodeluser`@`localhost` identified by "password";
+GRANT ALL on `lodel`.* TO lodeluser@localhost identified by "password";
+GRANT ALL on *.* TO lodeluser'@localhost identified by "password";
 puis mettre à jour `lodelconfig.php` avec ces infos</code></pre> 
 
 Installer en se connectant à 127.0.0.1/lodeladmin/install.php (après installation des libs php7.0 manquantes) completed :
