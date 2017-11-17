@@ -129,6 +129,7 @@ Ensuite:
 <pre><code>cp lodelconfig-default.php lodelconfig.php
 grep install_key lodelconfig.php
 touch 03dde1bd-c6b6-4424-8618-c4488e30484a
+#passer root (su root)
 mysql -u root -p
 #(pass :votremdp)
 create user 'lodeluser'@'localhost' identified by 'password';
