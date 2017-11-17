@@ -24,9 +24,9 @@ Il est cependant bien sûr possible de faire l'installation soi-même (à partir
 
 Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/) :
 
-- su root
-- apt-get update
-- apt-get install sudo
+`su root`  
+`apt-get update`  
+`apt-get install sudo`
 
 ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
 
@@ -34,57 +34,59 @@ ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
 - $USER ALL = ALL
 - reboot
 
+`sudo apt-get update`  
+`sudo apt-get dist-upgrade`  
+
 ### install des PAQUETS :   
 
-- sudo apt install mysql-server
-- sudo apt install mysql-client
-- sudo apt-get install php php-fpm
-- sudo apt-get remove apache2
-- (installe php7 sur debian9)
+`sudo apt install mysql-server`  
+`sudo apt install mysql-client`  
+`sudo apt-get install php php-fpm`  (installe php7 sur debian9)  
+`sudo apt-get remove apache2`  
 
 Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
 
--sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip
--sudo apt-get install git
--sudo apt-get install nginx
--sudo apt-get update
--sudo apt-get dist-upgrade
+`sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip`  
+`sudo apt-get install git`  
+`sudo apt-get install nginx`  
 
 ### Config MYSQL  
 
 - cf. https://doc.ubuntu-fr.org/mysql :
-- mysql -u root -p
-- create user '$USER'@'localhost' identified by 'lodel';
-- GRANT ALL PRIVILEGES ON *.* TO '$USER'@'localhost';
+<pre><code>mysql -u root -p
+create user '$USER'@'localhost' identified by 'lodel';
+GRANT ALL PRIVILEGES ON *.* TO '$USER'@'localhost';</code></pre>
+
 - changement du mot de passe du root sur la base :
-	- su root
-	- mysql -u root
-	- use mysql
-	- update user set Password="votremdp" where User="root";
+<pre><code>	su root
+	mysql -u root
+	use mysql
+	update user set Password="votremdp" where User="root";</code></pre>
+
 - Si un problème survient avec le mot de passe de mysql, cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
 
 ### Config PHP    
 
-- sudo cp sapi/fpm/php-fpm /usr/local/bin
+- `sudo cp sapi/fpm/php-fpm /usr/local/bin`  
 - Editer php.ini :
-	- sudo nano /etc/php/7.0/fpm/php.ini
+	`sudo nano /etc/php/7.0/fpm/php.ini`  
 - Trouver la directive cgi.fix_pathinfo= et modifier là comme ceci (la décommenter):
-	- cgi.fix_pathinfo = 0
+	`cgi.fix_pathinfo = 0`  
 
-- nano /etc/php/7.0/fpm/php-fpm.conf : à la fin du fichier remplacer:
-	- include=NONE/etc/php-fpm.d/*.conf  
+- `nano /etc/php/7.0/fpm/php-fpm.conf` : à la fin du fichier remplacer:
+	`include=NONE/etc/php-fpm.d/*.conf`   
 	- par :
-	- include=/etc/php/7.0/fpm/pool.d/www.conf
+	`include=/etc/php/7.0/fpm/pool.d/www.conf`  
 - vérifier si php-fpm est lancé :
-	- sudo /etc/init.d/php7.0-fpm status
+	`sudo /etc/init.d/php7.0-fpm status`  
 
 ### config NGINX   
 
 ajouter une config à la place de celle de : http://php.net/manual/fr/install.unix.nginx.php
 
-à insérer dans le bloc http {   }
-<pre><code>
-server {
+à insérer dans le bloc http {   }  
+
+<pre><code>server {
 	listen 9095;
 	root /home/votre_user/lodel;
 	index index.php;
@@ -93,7 +95,7 @@ server {
 	location / {
 			try_files $uri $uri/ =404;
 		}
-	use fastcgi for all php files
+	#use fastcgi for all php files
 	location ~ \.php$ {
 			fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
 			fastcgi_index index.php;
@@ -102,7 +104,7 @@ server {
 			include fastcgi_params;
 			fastcgi_cache off;
 		}
-	deny access to apache .htaccess files
+	#deny access to apache .htaccess files and svn files
 	location ~ /\.ht {
 			deny all;
 		}
