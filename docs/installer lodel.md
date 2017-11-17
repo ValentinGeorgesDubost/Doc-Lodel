@@ -115,34 +115,34 @@ ajouter une config à la place de celle de : http://php.net/manual/fr/install.un
 </code></pre>
 
 - puis relancer :
-	- sudo /usr/sbin/nginx -s stop
-	- sudo /usr/sbin/nginx
+	`sudo /usr/sbin/nginx -s stop`  
+	`sudo /usr/sbin/nginx`  
 
 ### Création et config de l'instance LODEL  
 
 Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :
-- git clone https://github.com/openedition/lodel
+`git clone https://github.com/openedition/lodel`  
 
 Au besoin: 
-- git checkout la_branche_qui_vous_intéresse
+`git checkout la_branche_qui_vous_intéresse`  
 Ensuite:
-- cp lodelconfig-default.php lodelconfig.php
-- grep install_key lodelconfig.php
-- touch 03dde1bd-c6b6-4424-8618-c4488e30484a
-- mysql -u root -p
-- (pass :votremdp)
-- create user 'lodeluser'@'localhost' identified by 'password';
-- CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-- GRANT ALL on `lodel`.* TO `lodeluser`@`localhost` identified by "password";
-- GRANT ALL on *.* TO `lodeluser`@`localhost` identified by "password";
-- puis mettre à jour lodelconfig.php avec ces infos
+<pre><code>cp lodelconfig-default.php lodelconfig.php
+grep install_key lodelconfig.php
+touch 03dde1bd-c6b6-4424-8618-c4488e30484a
+mysql -u root -p
+#(pass :votremdp)
+create user 'lodeluser'@'localhost' identified by 'password';
+CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+GRANT ALL on `lodel`.* TO `lodeluser`@`localhost` identified by "password";
+GRANT ALL on *.* TO `lodeluser`@`localhost` identified by "password";
+puis mettre à jour `lodelconfig.php` avec ces infos</code></pre> 
 
-Installer en se connectant à -127.0.0.1/lodeladmin/install.php (après installation des libs php7.0 manquantes) completed :
+Installer en se connectant à 127.0.0.1/lodeladmin/install.php (après installation des libs php7.0 manquantes) completed :
 
 - Username: admin
 - Password: xxxxxxxxxxxxxx
 
 ### Tester l'installation  
 
-Pour se connecter au bock-office (Admin lodel):  
+Pour se connecter au back-office (Admin lodel):   
 http://localhost:9095/lodeladmin
