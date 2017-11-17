@@ -105,10 +105,10 @@ ajouter une config à la place de celle de : http://php.net/manual/fr/install.un
 			fastcgi_cache off;
 		}
 	#deny access to apache .htaccess files and svn files
-	location ~ /\.ht {
+	location ~ /\\.ht {
 			deny all;
 		}
-	location ~ /\.svn {
+	location ~ /\\.svn {
 			deny all;
 		}
 }
