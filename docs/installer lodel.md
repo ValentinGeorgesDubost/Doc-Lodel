@@ -42,7 +42,7 @@ ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
 `sudo apt install mysql-server`  
 `sudo apt install mysql-client`  
 `sudo apt-get install php php-fpm`  (installe php7 sur debian9)  
-`sudo apt-get remove apache2`  
+`sudo apt-get remove apache2`  (ou`sudo apt-get purge apache2`  pour éviter que apache et nginx n'interfèrent)  
 
 Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
 
