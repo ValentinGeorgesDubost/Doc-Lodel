@@ -28,16 +28,14 @@ Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss66
 `apt-get update`  
 `apt-get install sudo`
 
-ajout en tant que root d'un fichier (nano /etc/sudoers.d/votreuser) :
+ajout en tant que root d'un fichier (`nano /etc/sudoers.d/votreuser`) contenant 1 ligne:
+ `$USER ALL = ALL`
+puis rebootez.
 
-- contenant 1 ligne:
-- $USER ALL = ALL
-- reboot
+### install des PAQUETS :   
 
 `sudo apt-get update`  
 `sudo apt-get dist-upgrade`  
-
-### install des PAQUETS :   
 
 `sudo apt install mysql-server`  
 `sudo apt install mysql-client`  
