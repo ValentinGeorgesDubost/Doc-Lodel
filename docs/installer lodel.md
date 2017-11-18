@@ -52,8 +52,8 @@ Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
 
 - cf. https://doc.ubuntu-fr.org/mysql :
 <pre><code>mysql -u root -p
-create user '$USER'@'localhost' identified by 'votremdp';
-GRANT ALL PRIVILEGES ON *.* TO '$USER'@'localhost';</code></pre>
+create user 'nom_utilisateur'@'localhost' identified by 'votremdp';
+GRANT ALL PRIVILEGES ON *.* TO 'nom_utilisateur'@'localhost';</code></pre>
 
 - changement du mot de passe du root sur la base :
 <pre><code>	su root
