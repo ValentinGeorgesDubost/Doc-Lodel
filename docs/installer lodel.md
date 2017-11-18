@@ -126,16 +126,18 @@ Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INST
 Au besoin: 
 `git checkout la_branche_qui_vous_intéresse`  
 Ensuite:
-<pre><code>cp lodelconfig-default.php lodelconfig.php
+<pre><code>
+cp lodelconfig-default.php lodelconfig.php
 grep install_key lodelconfig.php
 touch 03dde1bd-c6b6-4424-8618-c4488e30484a
-#passer root (su root)
+`#passer root (su root)`
 mysql -u root -p
-#(pass :votremdp)
+`#(pass :votremdp)`
 create user 'lodeluser'@'localhost' identified by 'password';
 CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 GRANT ALL on `lodel`.* TO lodeluser@localhost identified by "password";
-GRANT ALL on *.* TO lodeluser'@localhost identified by "password";</code></pre>  
+GRANT ALL on *.* TO lodeluser'@localhost identified by "password";
+</code></pre>  
 puis mettre à jour `lodelconfig.php` avec ces infos (database, dbusername, dbpasswd, dbhost)  
 et **commenter la ligne exit;** (avec //)  
 
