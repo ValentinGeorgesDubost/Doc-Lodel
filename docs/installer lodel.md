@@ -58,8 +58,8 @@ GRANT ALL PRIVILEGES ON *.* TO '$USER'@'localhost';</code></pre>
 - changement du mot de passe du root sur la base :
 <pre><code>	su root
 	mysql -u root
-	use mysql
-	update user set Password="votremdp" where User="root";</code></pre>
+	USE mysql
+	UPDATE user SET Password=PASSWORD('votremdp') where User='root';</code></pre>
 
 - Si un problème survient avec le mot de passe de mysql, cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
 
