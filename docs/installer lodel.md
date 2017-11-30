@@ -19,9 +19,7 @@ voici les étapes à suivre:
 ## Détail des étapes  
 A partir d'une machine virtuelle VirtualBox.
 Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/) :
-`su root`  
-`apt-get update`  
-`apt-get install sudo`  
+`su root` puis `apt-get update` et `apt-get install sudo`   
 Ajoutez vous comme sudoer : ajoutez un fichier (`sudo nano /etc/sudoers.d/votreuser`) contenant 1 ligne:
  `$USER ALL = ALL`
 puis rebootez.  
@@ -43,9 +41,9 @@ Pour éviter que apache et nginx n'interfèrent, supprimez apache2 (installé pa
 
 Ajouter les dépendances PHP pour Lodel:
 `sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip` 
-Pour vérifier quels modules vous avez installés:
+. Pour vérifier quels modules vous avez installés:
 `dpkg --list|grep php` 
-Pour vérifier si ils sont bien pris en compte par PHP-FPM:
+. Pour vérifier si ils sont bien pris en compte par PHP-FPM:
 `sudo /usr/sbin/php-fpm7.0 -m`  
 Cf. plus loin, lodeladmin/install.php vérifie que les modules sont disponibles pour Lodel.
 
@@ -123,4 +121,4 @@ Supprimez ensuite le fichier 03dde1bd-c6b6-4424-8618-c4488e30484a (et aussi l'ut
 ### Tester l'installation  
 
 Pour se connecter au back-office (Admin lodel):   
-http://localhost:9095/lodeladmin
+http://localhost/lodeladmin
