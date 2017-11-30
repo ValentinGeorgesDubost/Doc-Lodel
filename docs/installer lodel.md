@@ -81,7 +81,7 @@ Pour en savoir plus sur la config, cf. [le wiki de Nginx](https://www.nginx.com/
 La config de nginx est dans /etc/nginx.
 le fichier principal est nginx.conf ; la définition de la configuration du site lodel s'ajoute dans le répertoire sites-available et comme lien symbolique.
 
-On vous propose ici une configuration basique pour remplacer le fichier conf.
+On vous propose ici une configuration basique pour remplacer le fichier conf. Les 2 fichiers sont [téléchargeables ici](https://github.com/ValentinGeorgesDubost/Doc-Lodel/tree/master/files).
 `sudo mv nginx.conf nginx.conf.old` puis créez un fichier nginx.conf avec cette configuration.
 et ajoutez un fichier lodel dans le répertoire sites-available
 puis un lien symbolique depuis sites-enabled : `sudo ln -s /etc/nginx/sites-available/lodel /etc/nginx/sites-enabled/lodel`
