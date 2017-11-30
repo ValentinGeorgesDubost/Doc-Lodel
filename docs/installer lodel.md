@@ -55,10 +55,10 @@ create user 'nom_utilisateur'@'localhost' identified by 'votremdp';
 GRANT ALL PRIVILEGES ON *.* TO 'nom_utilisateur'@'localhost';</code></pre>
 
 - changement du mot de passe du root sur la base :
-<pre><code>	su root
-	mysql -u root
-	USE mysql
-	UPDATE user SET Password=PASSWORD('votremdp') where User='root';</code></pre>
+<pre><code>su root
+mysql -u root
+use mysql
+UPDATE user SET Password=PASSWORD('votremdp') where User='root';</code></pre>
 
 - Si un problème survient avec le mot de passe de mysql, cf. https://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html
 - Pour vérifier si MySQL est lancé :
@@ -93,13 +93,12 @@ puis un lien symbolique depuis sites-enabled : `sudo ln -s /etc/nginx/sites-avai
 
 ### Création et config de l'instance LODEL  
 
-Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :
+Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :    
 `git clone https://github.com/openedition/lodel`  
 (au besoin: `git checkout la_branche_qui_vous_intéresse` )
 
 Ensuite:
-<pre><code>
-cp lodelconfig-default.php lodelconfig.php
+<pre><code>cp lodelconfig-default.php lodelconfig.php
 grep install_key lodelconfig.php
 touch 03dde1bd-c6b6-4424-8618-c4488e30484a
 `#passer root (su root)`
@@ -108,8 +107,7 @@ mysql -u root -p
 create user 'lodeluser'@'localhost' identified by 'password';
 CREATE DATABASE `lodel` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 GRANT ALL on `lodel`.* TO lodeluser@localhost identified by "password";
-GRANT ALL on *.* TO lodeluser'@localhost identified by "password";
-</code></pre>  
+GRANT ALL on *.* TO lodeluser'@localhost identified by "password";</code></pre>   
 puis mettre à jour `lodelconfig.php` avec ces infos (database, dbusername, dbpasswd, dbhost)  
 et **commenter la ligne exit;** (avec //)  
 
