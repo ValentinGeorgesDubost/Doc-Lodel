@@ -67,17 +67,10 @@ GRANT ALL PRIVILEGES ON *.* TO 'nom_utilisateur'@'localhost';</code></pre>
 	`sudo service mysql status` 
 
 ### Config PHP    
+ 
+- Editer php.ini (`sudo nano /etc/php/7.0/fpm/php.ini`) et faire `cgi.fix_pathinfo = 0`(décommenter la ligne)  
+- La conf de PHP est dans dans `/etc/php/7.0/fpm/` (notamment php-fpm.conf et dans pool.d/www.conf qui définit le pool de connexions à FPM (qui écoutent sur /var/run/php/php7.0-fpm.sock) et qui précise que l'utilisateur FPM est user:www-data/group:www-data); le processus est dans /var/run/php/php7.0-fpm.pid; le log est dans /var/log/php7.0-fpm.log;
 
-- `sudo cp sapi/fpm/php-fpm /usr/local/bin`  
-- Editer php.ini :
-	`sudo nano /etc/php/7.0/fpm/php.ini`  
-- Trouver la directive cgi.fix_pathinfo= et modifier là comme ceci (la décommenter):
-	`cgi.fix_pathinfo = 0`  
-
-- `nano /etc/php/7.0/fpm/php-fpm.conf` : à la fin du fichier remplacer:
-	`include=NONE/etc/php-fpm.d/*.conf`   
-	- par :
-	`include=/etc/php/7.0/fpm/pool.d/www.conf`  
 - vérifier si php-fpm est lancé :
 	`sudo service php7.0-fpm status`  
 - pour relancer PHP-FPM
@@ -85,37 +78,15 @@ GRANT ALL PRIVILEGES ON *.* TO 'nom_utilisateur'@'localhost';</code></pre>
 	
 ### config NGINX   
 
-ajouter une config à la place de celle de : http://php.net/manual/fr/install.unix.nginx.php
+Pour en savoir plus sur la config, cf. [le wiki de Nginx](https://www.nginx.com/resources/wiki/start/topics/examples/phpfcgi/). 
 
-à insérer dans le bloc http {   }  
+La config de nginx est dans /etc/nginx.
+le fichier principal est nginx.conf ; la définition de la configuration du site lodel s'ajoute dans le répertoire sites-available et comme lien symbolique.
 
-<pre><code>server {
-	listen 9095;
-	root /home/votre_user/lodel;
-	index index.php;
-	access_log /var/log/nginx/lodel_access.log;
-	error_log /var/log/nginx/lodel_error.log;
-	location / {
-			try_files $uri $uri/ =404;
-		}
-	#use fastcgi for all php files
-	location ~ \.php$ {
-			fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-			fastcgi_index index.php;
-			fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-			fastcgi_param SCRIPT_NAME $fastcgi_script_name;
-			include fastcgi_params;
-			fastcgi_cache off;
-		}
-	#deny access to apache .htaccess files and svn files
-	location ~ /\\.ht {
-			deny all;
-		}
-	location ~ /\\.svn {
-			deny all;
-		}
-}
-</code></pre>
+On vous propose ici une configuration basique pour remplacer le fichier conf.
+`sudo mv nginx.conf nginx.conf.old` puis créez un fichier nginx.conf avec cette configuration.
+et ajoutez un fichier lodel dans le répertoire sites-available
+puis un lien symbolique depuis sites-enabled : `sudo ln -s /etc/nginx/sites-available/lodel /etc/nginx/sites-enabled/lodel`
 
 - puis relancez PHP-FPM
         `sudo service nginx reload`   
@@ -126,9 +97,8 @@ ajouter une config à la place de celle de : http://php.net/manual/fr/install.un
 
 Suivre les instructions de https://github.com/OpenEdition/lodel/blob/master/INSTALL :
 `git clone https://github.com/openedition/lodel`  
+(au besoin: `git checkout la_branche_qui_vous_intéresse` )
 
-Au besoin: 
-`git checkout la_branche_qui_vous_intéresse`  
 Ensuite:
 <pre><code>
 cp lodelconfig-default.php lodelconfig.php
@@ -145,10 +115,10 @@ GRANT ALL on *.* TO lodeluser'@localhost identified by "password";
 puis mettre à jour `lodelconfig.php` avec ces infos (database, dbusername, dbpasswd, dbhost)  
 et **commenter la ligne exit;** (avec //)  
 
-Installer en se connectant à 127.0.0.1/lodeladmin/install.php (après installation des libs php7.0 manquantes) completed :
-
-- Username: admin
-- Password: xxxxxxxxxxxxxx
+Connectez-vous à `127.0.0.1/lodeladmin/install.php` (qui vérifie si toutes les libs php sont installées, entre autres),
+puis si tout est Ok, suivez les instructions qui vous invitent à vous connectez en tant que Username: admin / Password: xxxxxxxxxxxxxx,
+puis à créer un autre utilisateur avec les droits LodelAdmin, puis à créer un site.
+Supprimez ensuite le fichier 03dde1bd-c6b6-4424-8618-c4488e30484a (et aussi l'utilisateur admin initial).  
 
 ### Tester l'installation  
 
