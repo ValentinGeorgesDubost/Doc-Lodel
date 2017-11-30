@@ -1,8 +1,10 @@
 # Installation de LODEL préinstallé sur une VM  
 
-Pour tester le logiciel, il est recommandé d'installer une version pré-installée à l'adresse suivante : [http://lodel.org/downloads/vms/2016](http://lodel.org/downloads/vms/2017) avec un readme complet (La version 2016 reste cependant la plus stable à ce jour).
+Pour tester le logiciel, il est recommandé d'installer la version pré-installée disponible à l'adresse suivante : [http://lodel.org/downloads/vms/2017](http://lodel.org/downloads/vms/2017) et suivez les instructions du readme.
+(La version 2017 doit être mise à jour -> utilisez pour l'instant [version 2016](http://lodel.org/downloads/vms/2017), plus stable).
 
-Il est cependant bien sûr possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge):
+Il est cependant bien sûr possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge),
+voici les étapes à suivre:  
 
 # Installation sur une VM (VirtualBox)   
 
@@ -11,28 +13,22 @@ Il est cependant bien sûr possible de faire l'installation soi-même (à partir
 - Faire pointer le virtual host sur la racine de l'installation Lodel.
 - L'utilisateur du serveur HTTP doit avoir les droits de lecture sur tous les fichiers.
 - Créer une base de donnée et un utilisateur ayant les droits de modification sur cette base.
-- Aller à l'adresse configurée avec un navigateur web, suivre les instructions. Il faudra donner temporairement les droits d'écriture sur le dossier d'une instance de site.
-- Vérifer qu'à l'intérieur du dossier d'un site l'utilisateur du serveur HTTP a bien les droits d'écriture sur les dossiers: upload, docannexe, docannexe/file, docannexe/image, lodel/sources, lodel/icons
+- Aller à l'adresse configurée avec un navigateur web, suivre les instructions dans l'IHM. Il faudra donner temporairement les droits d'écriture sur le dossier d'une instance de site.
+- Vérifer qu'à l'intérieur du dossier d'un site l'utilisateur du serveur HTTP (ex. www-data) a bien les droits d'écriture sur les dossiers: upload, docannexe, docannexe/file, docannexe/image, lodel/sources, lodel/icons
 
 ## Détail des étapes  
-(si besoin, augmenter la taille disque: VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo)
-
-- root votremotdepasse
-- $USER lodel
-- domaine votredomaine
-- supprimer la ligne avec le CD d'install dans /etc/apt/sources.list
-
+A partir d'une machine virtuelle VirtualBox.
 Si vous partez d'une image Debian9 vierge, installer sudo (https://blog.seboss666.info/2014/05/installer-et-utiliser-sudo-sur-debian/) :
-
 `su root`  
 `apt-get update`  
-`apt-get install sudo`
-
-ajout en tant que root d'un fichier (`nano /etc/sudoers.d/votreuser`) contenant 1 ligne:
+`apt-get install sudo`  
+Ajoutez vous comme sudoer : ajoutez un fichier (`sudo nano /etc/sudoers.d/votreuser`) contenant 1 ligne:
  `$USER ALL = ALL`
-puis rebootez.
+puis rebootez.  
 
-### install des PAQUETS :   
+Si besoin, augmenter la taille disque: VBoxmanage modifyhd cheminVM/dd.vdi --resize tailleenMo
+
+### installation des PAQUETS :   
 
 `sudo apt-get update`  
 `sudo apt-get dist-upgrade`  
@@ -40,13 +36,18 @@ puis rebootez.
 `sudo apt install mysql-server`  
 `sudo apt install mysql-client`  
 `sudo apt-get install php php-fpm`  (installe php7 sur debian9)  
-`sudo apt-get remove apache2`  (ou`sudo apt-get purge apache2`  pour éviter que apache et nginx n'interfèrent)  
-
-Ajouter les paquets (cf. lors de l'exécution de lodeladmin/install.php) :
-
-`sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip`  
-`sudo apt-get install git`  
+Pour éviter que apache et nginx n'interfèrent, supprimez apache2 (installé par défaut sur Debian)
+`sudo apt-get remove apache2`  (ou`sudo apt-get purge apache2`)    
 `sudo apt-get install nginx`  
+`sudo apt-get install git`  
+
+Ajouter les dépendances PHP pour Lodel:
+`sudo apt-get install php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-mysqlnd php7.0-zip` 
+Pour vérifier quels modules vous avez installés:
+`dpkg --list|grep php` 
+Pour vérifier si ils sont bien pris en compte par PHP-FPM:
+`sudo /usr/sbin/php-fpm7.0 -m`  
+Cf. plus loin, lodeladmin/install.php vérifie que les modules sont disponibles pour Lodel.
 
 ### Config MYSQL  
 
@@ -61,7 +62,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'nom_utilisateur'@'localhost';</code></pre>
 	USE mysql
 	UPDATE user SET Password=PASSWORD('votremdp') where User='root';</code></pre>
 
-- Si un problème survient avec le mot de passe de mysql, cf. www.commentcamarche.net/faq/9773-mysql-changer-le-mot-de-passe-root
+- Si un problème survient avec le mot de passe de mysql, cf. https://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html
+- Pour vérifier si MySQL est lancé :
+	`sudo service mysql status` 
 
 ### Config PHP    
 
@@ -76,8 +79,10 @@ GRANT ALL PRIVILEGES ON *.* TO 'nom_utilisateur'@'localhost';</code></pre>
 	- par :
 	`include=/etc/php/7.0/fpm/pool.d/www.conf`  
 - vérifier si php-fpm est lancé :
-	`sudo /etc/init.d/php7.0-fpm status`  
-
+	`sudo service php7.0-fpm status`  
+- pour relancer PHP-FPM
+        `sudo service php7.0-fpm restart`  
+	
 ### config NGINX   
 
 ajouter une config à la place de celle de : http://php.net/manual/fr/install.unix.nginx.php
@@ -112,9 +117,10 @@ ajouter une config à la place de celle de : http://php.net/manual/fr/install.un
 }
 </code></pre>
 
-- puis relancer :
-	`sudo /usr/sbin/nginx -s stop`  
-	`sudo /usr/sbin/nginx`  
+- puis relancez PHP-FPM
+        `sudo service nginx reload`   
+- pour vérifier si php-fpm est lancé :
+	`sudo service nginx status` 
 
 ### Création et config de l'instance LODEL  
 
