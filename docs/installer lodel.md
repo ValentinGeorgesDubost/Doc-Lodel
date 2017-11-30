@@ -3,8 +3,10 @@
 Pour tester le logiciel, il est recommandé d'installer la version pré-installée disponible à l'adresse suivante : [http://lodel.org/downloads/vms/2017](http://lodel.org/downloads/vms/2017) et suivez les instructions du readme.
 (La version 2017 doit être mise à jour -> utilisez pour l'instant [version 2016](http://lodel.org/downloads/vms/2017), plus stable).
 
+Notamment, la version préinstallée comprend également [OTX, le logiciel de conversion de fichiers .doc ou .odt files vers le format XML-TEI](https://github.com/OpenEdition/otx) ; OTX est integré à Lodel 1.0. Sans OTX, pour importer un document tel qu'un article sur un site, vous devez le charger au format XML-TEI; OTX permet de charger directement des documents bureautiques au format DOC.
+
 Il est cependant bien sûr possible de faire l'installation soi-même (à partir d'un OS Linux ou d'une VM vierge),
-voici les étapes à suivre:  
+voici les étapes à suivre (sans l'installation d'OTX):  
 
 # Installation sur une VM (VirtualBox)   
 
