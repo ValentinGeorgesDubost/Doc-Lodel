@@ -117,8 +117,3 @@ Le même plugin n'utilisant pas de classe :
 	// on remplace le contenu de la page dans la vue
 	View::$page = $page;    
 	}
-
-Exemple : afficher la météo d'une ville précise dans l'interface lodel
-----------------------------------------------------------------------
-
-Tous les détails : <http://blog.lodel.org/173>
