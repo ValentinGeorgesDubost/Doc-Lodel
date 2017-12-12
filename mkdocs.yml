@@ -22,6 +22,7 @@ pages:
   - 'Les-templates/Lodelscript.md'
 
 - Les extensions (plugins): 'Plugins.md'
+- 'Exemple plugin.md'
 
 - PROCEDURES DE MIGRATION:
   - 'Historique/De la version 0.8 à la 0.9.md'
