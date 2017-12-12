@@ -1,3 +1,6 @@
+Migration de la version 0.7 à 0.9 : un cas concret.md
+=====================================================
+
 Dans le cadre d’un partenariat, nous avons eu pour mission de migrer un site de lodel 0.7 vers lodel 0.9, appelons le asgb. Nous avons reçu les données du site sous la forme d’un fichier compressé comprenant une sauvegarde des données réalisée dans l’interface lodel et l’arborescence du site. A cause de l’existence d’incompatibilités entre les versions récentes de php et la version 0.7 de lodel, nous réservons une machine aux projets de migration, appelons la oldserver, sous debian 5.0.10 sur laquelle est installée la version 5.2.1 de php et la version 5.0.51 de MySql, les bases étant créées par défaut en utf8. Le répertoire /www/lodel07 contient la racine de notre installation lodel 0.7 .
 
 
