@@ -1,7 +1,7 @@
 Architecture technique
 ======================
 
-ATTENTION : cette documentation décrit de manière très générale le fonctionnement de la version actuelle de Lodel (0.8). De nombreux points sont à revoir pour profiter pleinement des bénéfices d’utilisation attendus des design pattern MVC et DAO (maniabilité et extensibilité du code, séparation des compétences). Cette doc devrait donc rapidement devenir obsolète.
+ATTENTION : cette documentation décrit de manière très générale le fonctionnement d'une version antérieure de Lodel (0.8). De nombreux points sont à revoir pour profiter pleinement des bénéfices d’utilisation attendus des design pattern MVC et DAO (maniabilité et extensibilité du code, séparation des compétences). Cette page de doc est donc partiellement obsolète.
 
 Vue d’ensemble
 --------------
