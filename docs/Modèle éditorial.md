@@ -64,9 +64,8 @@ C’est l’application des règles du modèle éditorial qui explique que certa
 Dans la page d’édition des publications, le bloc de « Gestion des publications » est propre au modèle éditorial de Revues.org. Il permet de transmettre des informations qui, si elles sont utilisées par la maquette, déclenchent des affichages spécifiques :
 
 Bloc de gestion des publications
-Bloc de gestion des publications
 
-C.F IMAGE <https://lodel.org/docannexe/image/434/img-5-small580.png>
+![Screenshot1](image/ME-prez.png)
 
 - « Cette publication est-elle prioritaire ? » Dans les maquettes conçues par Revues.org, cette option permet de faire remonter la publication à la « Une » de la page d’accueil du site.
 - « Cette publication est-elle à paraître ? » Dans les maquettes conçues par Revues.org, cette option permet d’afficher le numéro des revues à paraître dans la barre de navigation, sous l’intitulé adéquat.
