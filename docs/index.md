@@ -6,7 +6,7 @@ Pour une présentation des fonctionnalités de Lodel, voir la documentation Util
 **ATTENTION : Doc en construction**.  
 
 Lodel est une application de gestion de contenu web écrit en PHP, fonctionnant avec une base MySQL.
-L'application est structurée par son [architecture Modèle Vue Contrôleur](https://doc-lodel.readthedocs.io/en/latest/Architecture%20et%20organisation/) ; reprend l'article <https://lodel.hypotheses.org/configurer/architecture-technique>
+L'application est structurée par son [architecture Modèle Vue Contrôleur](https://doc-lodel.readthedocs.io/en/latest/Architecture%20et%20organisation/)
 
 Lodel est un CMS **multi-sites**:  il y a une base de données par site, un modèle éditorial par site. 
 
