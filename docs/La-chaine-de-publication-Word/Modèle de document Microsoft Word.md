@@ -9,7 +9,7 @@ La dernière version est disponible en téléchargement à l'adresse suivante :
 La version 3 est constituée d'une archive zip qui contient :
 ------------------------------------------------------------
 
-* le modèle _revuesorg_fr.dot_, qui contient les styles déclarés dans le modèle éditorial de Revues.org distribué avec Lodel (modèle à utiliser par défaut) ;
+* le modèle _revuesorg_fr.dot_, qui contient les styles déclarés dans le modèle éditorial de OpenEdition Journals distribué avec Lodel (modèle à utiliser par défaut) ;
 * le modèle _revuesorg_complet.dot_, qui contient un plus grand nombre de styles (résumés dans des langues supplémentaires, index supplémentaires, etc.). L’utilisation de ce modèle de document nécessite la modification du modèle éditorial dans Lodel ;
 * les modèles _macros_revuesorg_win.dot_ et ''macros_revuesorg_mac.dot''. Ces deux modèles contiennent des macros qui permettent d’automatiser certaines corrections de stylage et d’erreurs typographiques (une version pour Windows et une version pour MacOS).
 * _documentation_modele_revuesorg.doc_ : la documentation d'installation et d'utilisation des macros
