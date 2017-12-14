@@ -26,15 +26,15 @@ Il existe différents types de publications et différents types de documents, c
 
 On peut ajouter à la base du site cinq entités : un type de publication (collection) et quatre types de document (éditorial, article, annonce et actualité et présentation).
 
-La collection est la première subdivision d’une revue en ligne élaborée avec le modèle éditorial de Revues.org. Elle se crée à la base du site et est destinée à recevoir volumes, numéros, rubriques, colloques ainsi qu’éditoriaux, articles, annonces et actualités, brèves et présentations.
+La collection est la première subdivision d’une revue en ligne élaborée avec le modèle éditorial de d'OpenEdition Journals. Elle se crée à la base du site et est destinée à recevoir volumes, numéros, rubriques, colloques ainsi qu’éditoriaux, articles, annonces et actualités, brèves et présentations.
 
 Un volume, un numéro, une rubrique et un colloque peuvent contenir un volume, un numéro, une rubrique, un colloque, un regroupement, un article, une annonce et actualité, un éditorial, une brève, un compte rendu, une note de lecture, une présentation, une chronique et un article vide. Les publications de type rubrique, numéro, volume et colloque peuvent contenir un nombre illimité de publications. Un regroupement peut recevoir des documents tels qu’articles, annonces et actualités, éditoriaux, brèves, compte rendus, notes de lecture, présentations, chroniques et articles vides. Un regroupement ne peut par conséquent pas recevoir de publications.
 
 
-Le modèle éditorial de revues.org : <https://lodel.org/668?file=1>
-==================================================================
+Le modèle éditorial d'OpenEdition Journals : <https://lodel.org/668?file=1>
+===========================================================================
 
-Lodel permet à l’administrateur d’un site de définir les entités – les objets éditoriaux – avec lesquels il souhaite travailler, d’en configurer la composition en terme de champs de base de données et d’en déterminer le comportement. Ce travail, relativement complexe, demande une bonne habitude de la publication sur le Web, une certaine expérience des bases de données relationnelles et une connaissance avancée de Lodel ! Pour cette raison, on peut choisir à l’installation du logiciel d’utiliser au choix deux modèles éditoriaux, dont l’un est en tous points similaires avec celui que le Cléo utilise pour son portail Revues.org. Parce qu’il est le plus fréquemment utilisé, ce modèle fait ici l’objet d’une présentation globale.
+Lodel permet à l’administrateur d’un site de définir les entités – les objets éditoriaux – avec lesquels il souhaite travailler, d’en configurer la composition en terme de champs de base de données et d’en déterminer le comportement. Ce travail, relativement complexe, demande une bonne habitude de la publication sur le Web, une certaine expérience des bases de données relationnelles et une connaissance avancée de Lodel ! Pour cette raison, on peut choisir à l’installation du logiciel d’utiliser au choix deux modèles éditoriaux, dont l’un est en tous points similaires avec celui que le Cléo utilise pour son portail OpenEdition Journals. Parce qu’il est le plus fréquemment utilisé, ce modèle fait ici l’objet d’une présentation globale.
 
 Le modèle éditorial de Revues.org repose sur l’utilisation pour l’essentiel de trois objets éditoriaux distincts :
 
