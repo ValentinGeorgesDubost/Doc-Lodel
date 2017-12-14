@@ -557,7 +557,7 @@ Le corps de la boucle est compris entre les balises `<DO>` et `</DO>`, c'est cet
 
 L’attribut NAME est obligatoire et unique, c'est-à-dire dans un même fichier template deux boucles ne peuvent pas avoir le même nom (attention, si deux boucles ont le même nom, dans deux fichiers différents, mais inclus dans le même template, alors il y aura une erreur). Pensez à donner un nom explicite à cet attribut, il permettra de bien indiquer à quoi sert cette boucle et quelle est sa fonction.
 
-L’attribut TABLE permet de définir de quelles tables doivent être extraites les données. A priori, le développeur de template pour Lodel utilise les tables définies par le modèle éditorial (ME). Par exemple, pour le ME de Revues.org, les tables suivantes sont disponibles :
+L’attribut TABLE permet de définir de quelles tables doivent être extraites les données. A priori, le développeur de template pour Lodel utilise les tables définies par le modèle éditorial (ME). Par exemple, pour le ME de OpenEdition Journals, les tables suivantes sont disponibles :
 * Tables stockant les entités (publications et documents) : publications, textes, textessimples, individus, fichiers, liens.
 * Tables stockant les entrées d'index : indexes, indexavances.
 * Tables stockant les entrées d'index de personnes : auteurs.
