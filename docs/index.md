@@ -1,5 +1,5 @@
-Vue d'ensemble de Lodel
-=======================
+Vue d'ensemble
+==============
 
 Pour une présentation des fonctionnalités de Lodel, voir la documentation Utilisateur (http://doc-lodel-utilisateur.readthedocs.io/en/latest/)
 
