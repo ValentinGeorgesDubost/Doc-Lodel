@@ -11,7 +11,7 @@ Lodel est un CMS **multi-sites**:  il y a une base de données par site, un mod�
 Lodel est conçu pour les besoins de la publication sur le web de contenus scientifiques, revues et livres, et utilise un **schéma XML/TEI** qui définit cette structure et le type de données.  
 Lodel sait nativement traiter des fichiers XML/TEI conformes au schéma Lodel/OpenEdition, et permet aussi d'importer des contenus (article de revue, chapitre de livre) au **format Word** utilisant des feuilles de style correspondant au schéma TEI, grâce à **OTX** - autre logiciel libre développé par le Cléo.  
 
-Le **modèle éditorial** définit, plus largement, tous les contenus gérés par le CMS Lodel (dont les publications scientifiques, mais aussi ); dans Lodel, l'utilisateur peut définir complètement les classes, à partir de 3 types d'objets 'de base': entités, entrées d'index,  personnes.
+Le **modèle éditorial** définit, plus largement, tous les contenus gérés par le CMS Lodel (dont les publications scientifiques, mais aussi ); dans Lodel, l'utilisateur peut définir complètement les classes, à partir de 3 types d'objets 'de base' : entités, entrées d'index,  personnes.
 
 L'application d'administration (back-office) est elle-même un site Lodel.  
 Le logiciel libre Lodel est publié avec un Modèle Editorial et des templates qui permettent de gérer une site de revue scientifique, mais l'utilisateur peut et doit le plus souvent adapter et compléter pour répondre à ses besoins particuliers.  
