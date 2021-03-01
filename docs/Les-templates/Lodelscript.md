@@ -1196,7 +1196,7 @@ Permet d’extraire la première lettre d’un texte contenu dans une variable a
 
 ## multiline
 
-Permet de passer à la ligne tout les x caractères sans couper les mots sauf si un mot fait plus de x caractères. Le nombre de caractères par lignes doit être passé en variable. Cette fonction est très utile pour les balises <textarea> afin d’éviter d’avoir un ascenseur horizontal.
+Permet de passer à la ligne tout les x caractères sans couper les mots sauf si un mot fait plus de x caractères. Le nombre de caractères par lignes doit être passé en variable. Cette fonction est très utile pour les balises `<textarea>` afin d’éviter d’avoir un ascenseur horizontal.
 
 Note : le comportement par défaut des navigateurs ne nécessite plus l’utilisation de cette fonction.
 
@@ -1309,7 +1309,7 @@ Cette fonction transforme la variable en supprimant toutes les balises HTML et e
 
 	Le texte modifié : Les sanglots longs des violons de l'automne, blessent mon coeur d'une langueur monotone Paul Verlaine<br />
 
-Ce filtre est utile pour le <TITLE> d'une page HTML par exemple. Attention toutefois avec les écritures non latines, l'affichage du titre dans la barre d'état du logiciel peut être incorrecte dans les navigateurs actuels.
+Ce filtre est utile pour le `<TITLE>` d'une page HTML par exemple. Attention toutefois avec les écritures non latines, l'affichage du titre dans la barre d'état du logiciel peut être incorrecte dans les navigateurs actuels.
 
 
 ## cuttext
