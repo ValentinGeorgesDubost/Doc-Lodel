@@ -1,5 +1,8 @@
 site_name: Doc Technique Lodel
 
+theme:
+    name: readthedocs
+    
 pages:
 - Accueil: 'index.md'
 - Installation complète de Lodel: 'installer lodel.md'
